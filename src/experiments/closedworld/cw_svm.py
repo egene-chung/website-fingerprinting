@@ -34,7 +34,7 @@ param_grid = {'C': [2048, 4096, 8192, 16384, 32768, 65536, 131072],
 param_combinations = list(itertools.product(param_grid['C'], param_grid['gamma']))
 
 # 결과 기록 파일 경로
-results_file_path = './svm_feature_selection_accuracy_results_selectkbest.txt'
+results_file_path = './cw_svm.txt'
 
 # 현재 시간 기록
 current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

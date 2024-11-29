@@ -7,7 +7,6 @@ from data.preprocess import check_and_preprocess_data
 from sklearn.metrics import accuracy_score
 from sklearn.feature_selection import SelectKBest, f_classif, VarianceThreshold
 from imblearn.over_sampling import SMOTE
-from imblearn.under_sampling import RandomUnderSampler
 
 from evaluation import evaluate_multi, evaluate_binary
 
@@ -62,35 +61,7 @@ def train_rf_cw(X, y, X_train, X_test, y_train, y_test):
     y_proba = rf_model.predict_proba(X_test_selected_scaled)
     evaluate_multi(y_test, y_pred, y_proba, class_names, save_path_details="cw_rf", save_plots=True)
 
-def train_svm_ow_binary(X, y, X_train, X_test, y_train, y_test):
-    # best performing model in the open world binary scenario
-    print("\n========Open World- Binary (SVM)========")
-    num_features=40
-    C_value=2048
-    gamma_value=0.25
-
-    selector = SelectKBest(score_func=f_classif, k=num_features)
-    X_selected = selector.fit_transform(X, y)
-    
-    # Scale the features to the range [-1, 1]
-    scaler = MinMaxScaler(feature_range=(-1, 1))
-    X_train_scaled = scaler.fit_transform(X_train)
-    X_test_scaled = scaler.fit_transform(X_test)
-
-    # Create an SVM classifier with the specified parameters
-    svm_model = svm.SVC(kernel='rbf', C=C_value, gamma=gamma_value)
-
-    # Train the SVM model on the training data
-    svm_model.fit(X_train_scaled, y_train)
-
-    # Use the trained classifier to predict labels for the test data
-    y_pred = svm_model.predict(X_test_scaled)
-
-    # Evaluate the accuracy of the classifier
-    accuracy = accuracy_score(y_test, y_pred)
-    print('Accuracy:', accuracy)
-
-def train_svm_ow_binary(X, y, X_train, X_test, y_train, y_test, num_features=40, C_value=2048, gamma_value=0.25):
+def train_svm_ow_binary(X, y, X_train, X_test, y_train, y_test, num_features=50, C_value=2048, gamma_value=0.25):
     print("\n========Open World- Binary (SVM)========")
 
     # 1. 처리되지 않은 데이터
@@ -101,7 +72,7 @@ def train_svm_ow_binary(X, y, X_train, X_test, y_train, y_test, num_features=40,
     X_test_scaled = scaler.transform(X_test)
 
     # Train and evaluate SVM
-    svm_model = svm.SVC(kernel='rbf', C=C_value, gamma=gamma_value)
+    svm_model = svm.SVC(kernel='rbf', C=C_value, gamma=gamma_value, probability=True)
     svm_model.fit(X_train_scaled, y_train)
     y_pred = svm_model.predict(X_test_scaled)
     y_proba = svm_model.predict_proba(X_test_scaled)[:, 1] 
@@ -111,10 +82,8 @@ def train_svm_ow_binary(X, y, X_train, X_test, y_train, y_test, num_features=40,
     # 2. SMOTE + SelectKBest 적용
     print("\n--- Using SMOTE + SelectKBest ---")
     # # Apply SMOTE
-    # smote = SMOTE(random_state=42)
-    # X_train_resampled, y_train_resampled = smote.fit_resample(X_train, y_train)
-    rus = RandomUnderSampler(random_state=42)
-    X_train_resampled, y_train_resampled = rus.fit_resample(X_train, y_train)
+    smote = SMOTE(random_state=42)
+    X_train_resampled, y_train_resampled = smote.fit_resample(X_train, y_train)
 
     # Apply SelectKBest
     selector = SelectKBest(score_func=f_classif, k=num_features)
