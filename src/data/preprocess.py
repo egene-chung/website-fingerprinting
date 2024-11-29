@@ -50,7 +50,7 @@ def load_data():
     X2_total = X2_mon + X2_unmon
     y_total_ow = y_mon_ow + y_unmon
     
-    # combined - 96 classes(95 monitored + 1 unmonitored)
+    # open world - 96 classes(95 monitored + 1 unmonitored)
     y_total_combined = y_mon_cw + y_unmon
 
     # closed world
@@ -60,21 +60,21 @@ def load_data():
         'Label': y_mon_cw
     })
     
-    # open world
-    df_ow = pd.DataFrame({
+    # open world binary
+    df_ow_binary = pd.DataFrame({
         'timestamps': X1_total,
         'direction_size': X2_total,
         'Label': y_total_ow
     })
 
-    # combined
-    df_ow_combined = pd.DataFrame({
+    # open world multi
+    df_ow_multi = pd.DataFrame({
         'timestamps': X1_total,
         'direction_size': X2_total,
         'Label': y_total_combined
     })
 
-    return df_cw, df_ow, df_ow_combined
+    return df_cw, df_ow_binary, df_ow_multi
 
 # -- Utility Functions --
 def calculate_cumulative_sum(data):
@@ -109,6 +109,8 @@ def preprocess_to_csv(df, scenario):
     df['sum_incoming_outgoing_total'] = df['num_incoming'] + df['num_outgoing'] + df['num_total']
     df['sum_incoming_outgoing_total_cum'] = df['num_incoming_cum'] + df['num_outgoing_cum'] + df['num_total_cum']
     df['sum_incoming_outgoing_total_burst'] = df['num_incoming_burst'] + df['num_outgoing_burst'] + df['num_total_burst']
+    df['sum_incoming_outgoing_total_cum_diff'] = df['sum_incoming_outgoing_total'] - df['sum_incoming_outgoing_total_cum']
+    df['sum_incoming_outgoing_total_burst_diff'] = df['sum_incoming_outgoing_total'] - df['sum_incoming_outgoing_total_burst']
 
     # -- Fraction -- 
     # Fraction of Incoming Packets, Outgoing Packets / Total Packets for each list
@@ -117,7 +119,9 @@ def preprocess_to_csv(df, scenario):
     df['fraction_outgoing'] = df['num_outgoing'] / df['num_total']
 
     df['fraction_incoming_burst'] = df['num_incoming_burst'] / df['num_total_burst']
+    df['fraction_incoming_burst_incoming_diff'] = df['fraction_incoming_burst']-df['fraction_incoming']
     df['fraction_outgoing_burst'] = df['num_outgoing_burst'] / df['num_total_burst']
+    df['fraction_outgoing_burst_outgoing_diff'] = df['fraction_outgoing_burst']-df['fraction_outgoing']
 
     # --std--
     # Std calculations for each list
@@ -196,14 +200,14 @@ def preprocess_to_csv(df, scenario):
     print(f"Data saved successfully for scenario: {scenario}")
 
 def preprocess_data():
-    df_cw, df_ow, df_c_ow = load_data()
+    df_cw, df_ow_binary, df_ow_multi = load_data()
     preprocess_to_csv(df_cw, scenario="closedworld")
-    preprocess_to_csv(df_ow, scenario="openworld")
-    # preprocess_to_csv(df_c_ow, scenario="combinedworld")
+    preprocess_to_csv(df_ow_binary, scenario="openworld_binary")
+    preprocess_to_csv(df_ow_multi, scenario="openworld_multi")
 
-def check_and_preprocess_data(openworld_path, closedworld_path):
+def check_and_preprocess_data(closedworld_path,openworld_binary_path,openworld_multi_path):
     # 파일이 없는 경우
-    if not (os.path.exists(openworld_path) and os.path.exists(closedworld_path)):
+    if not (os.path.exists(closedworld_path) and os.path.exists(openworld_binary_path) and os.path.exists(openworld_multi_path)):
         print("Preprocessing data...")
         try:
             preprocess_data()  # 전처리 진행
