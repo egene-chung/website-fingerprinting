@@ -5,7 +5,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from data.preprocess import check_and_preprocess_data
 from sklearn.metrics import accuracy_score
-from sklearn.feature_selection import SelectKBest, f_classif
+from sklearn.feature_selection import SelectKBest, f_classif, VarianceThreshold
+from imblearn.over_sampling import SMOTE
+from imblearn.under_sampling import RandomUnderSampler
 
 from evaluation import evaluate_multi, evaluate_binary
 
@@ -88,6 +90,46 @@ def train_svm_ow_binary(X, y, X_train, X_test, y_train, y_test):
     accuracy = accuracy_score(y_test, y_pred)
     print('Accuracy:', accuracy)
 
+def train_svm_ow_binary(X, y, X_train, X_test, y_train, y_test, num_features=40, C_value=2048, gamma_value=0.25):
+    print("\n========Open World- Binary (SVM)========")
+
+    # 1. 처리되지 않은 데이터
+    print("\n--- Using Raw Data ---")
+    # Scale the features to the range [-1, 1]
+    scaler = MinMaxScaler(feature_range=(-1, 1))
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+
+    # Train and evaluate SVM
+    svm_model = svm.SVC(kernel='rbf', C=C_value, gamma=gamma_value)
+    svm_model.fit(X_train_scaled, y_train)
+    y_pred = svm_model.predict(X_test_scaled)
+    y_proba = svm_model.predict_proba(X_test_scaled)[:, 1] 
+
+    evaluate_binary(y_test, y_pred, y_proba, save_plots=False)    
+
+    # 2. SMOTE + SelectKBest 적용
+    print("\n--- Using SMOTE + SelectKBest ---")
+    # # Apply SMOTE
+    # smote = SMOTE(random_state=42)
+    # X_train_resampled, y_train_resampled = smote.fit_resample(X_train, y_train)
+    rus = RandomUnderSampler(random_state=42)
+    X_train_resampled, y_train_resampled = rus.fit_resample(X_train, y_train)
+
+    # Apply SelectKBest
+    selector = SelectKBest(score_func=f_classif, k=num_features)
+    X_train_selected = selector.fit_transform(X_train_resampled, y_train_resampled)
+    X_test_selected = selector.transform(X_test)
+
+    # Scale the features
+    X_train_selected_scaled = scaler.fit_transform(X_train_selected)
+    X_test_selected_scaled = scaler.transform(X_test_selected)
+
+    # Train and evaluate SVM
+    svm_model.fit(X_train_selected_scaled, y_train_resampled)
+    y_pred_selected = svm_model.predict(X_test_selected_scaled)
+    y_proba_selected = svm_model.predict_proba(X_test_selected_scaled)[:, 1]
+    evaluate_binary(y_test, y_pred_selected, y_proba_selected, save_path_details="smote_selectkbest", save_plots="ow_binary")
 
 
 def main():
@@ -112,7 +154,11 @@ def main():
     X_ow = df_ow.drop(columns=['Label'])
     y_ow = df_ow['Label']
 
-    X_train, X_test, y_train, y_test = train_test_split(X_ow, y_ow, test_size=0.2, stratify=y_ow, random_state=42)
+    # VarianceThreshold를 사용하여 상수 값 제거
+    var_thresh = VarianceThreshold(threshold=0.0)  # 분산이 0인 feature 제거
+    X_ow_reduced = var_thresh.fit_transform(X_ow)
+
+    X_train, X_test, y_train, y_test = train_test_split(X_ow_reduced, y_ow, test_size=0.2, stratify=y_ow, random_state=42)
     
     train_svm_ow_binary(X_ow, y_ow, X_train, X_test, y_train, y_test)
     
