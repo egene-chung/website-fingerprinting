@@ -1,0 +1,1398 @@
+
+SVM Feature Selection Experiment Results (Accuracy Only) - 2024-11-27 17:06:07
+==================================================
+Features Selected: 50, C=2048, gamma=0.05
+Test Accuracy: 0.7811
+==================================================
+Features Selected: 50, C=2048, gamma=0.1
+Test Accuracy: 0.7755
+==================================================
+
+SVM Feature Selection Experiment Results (Accuracy Only) - 2024-11-27 17:24:36
+==================================================
+Features Selected: 50, C=2048, gamma=0.001
+Test Accuracy: 0.7139
+==================================================
+Features Selected: 50, C=2048, gamma=0.01
+Test Accuracy: 0.7642
+==================================================
+Features Selected: 50, C=2048, gamma=0.05
+Test Accuracy: 0.7811
+==================================================
+Features Selected: 50, C=2048, gamma=0.1
+Test Accuracy: 0.7755
+==================================================
+Features Selected: 50, C=2048, gamma=0.125
+Test Accuracy: 0.7766
+==================================================
+Features Selected: 50, C=2048, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: 50, C=2048, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: 50, C=2048, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: 50, C=2048, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 50, C=2048, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: 50, C=2048, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: 50, C=4096, gamma=0.001
+Test Accuracy: 0.7279
+==================================================
+Features Selected: 50, C=4096, gamma=0.01
+Test Accuracy: 0.7676
+==================================================
+Features Selected: 50, C=4096, gamma=0.05
+Test Accuracy: 0.7803
+==================================================
+Features Selected: 50, C=4096, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: 50, C=4096, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: 50, C=4096, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: 50, C=4096, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: 50, C=4096, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: 50, C=4096, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 50, C=4096, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: 50, C=4096, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: 50, C=8192, gamma=0.001
+Test Accuracy: 0.7426
+==================================================
+Features Selected: 50, C=8192, gamma=0.01
+Test Accuracy: 0.7658
+==================================================
+Features Selected: 50, C=8192, gamma=0.05
+Test Accuracy: 0.7795
+==================================================
+Features Selected: 50, C=8192, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: 50, C=8192, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: 50, C=8192, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: 50, C=8192, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: 50, C=8192, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: 50, C=8192, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 50, C=8192, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: 50, C=8192, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: 50, C=16384, gamma=0.001
+Test Accuracy: 0.7571
+==================================================
+Features Selected: 50, C=16384, gamma=0.01
+Test Accuracy: 0.7653
+==================================================
+Features Selected: 50, C=16384, gamma=0.05
+Test Accuracy: 0.7792
+==================================================
+Features Selected: 50, C=16384, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: 50, C=16384, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: 50, C=16384, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: 50, C=16384, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: 50, C=16384, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: 50, C=16384, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 50, C=16384, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: 50, C=16384, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: 50, C=32768, gamma=0.001
+Test Accuracy: 0.7629
+==================================================
+Features Selected: 50, C=32768, gamma=0.01
+Test Accuracy: 0.7655
+==================================================
+Features Selected: 50, C=32768, gamma=0.05
+Test Accuracy: 0.7792
+==================================================
+Features Selected: 50, C=32768, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: 50, C=32768, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: 50, C=32768, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: 50, C=32768, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: 50, C=32768, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: 50, C=32768, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 50, C=32768, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: 50, C=32768, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: 50, C=65536, gamma=0.001
+Test Accuracy: 0.7668
+==================================================
+Features Selected: 50, C=65536, gamma=0.01
+Test Accuracy: 0.7647
+==================================================
+Features Selected: 50, C=65536, gamma=0.05
+Test Accuracy: 0.7792
+==================================================
+Features Selected: 50, C=65536, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: 50, C=65536, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: 50, C=65536, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: 50, C=65536, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: 50, C=65536, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: 50, C=65536, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 50, C=65536, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: 50, C=65536, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: 50, C=131072, gamma=0.001
+Test Accuracy: 0.7666
+==================================================
+Features Selected: 50, C=131072, gamma=0.01
+Test Accuracy: 0.7650
+==================================================
+Features Selected: 50, C=131072, gamma=0.05
+Test Accuracy: 0.7792
+==================================================
+Features Selected: 50, C=131072, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: 50, C=131072, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: 50, C=131072, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: 50, C=131072, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: 50, C=131072, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: 50, C=131072, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 50, C=131072, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: 50, C=131072, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: 40, C=2048, gamma=0.001
+Test Accuracy: 0.6976
+==================================================
+Features Selected: 40, C=2048, gamma=0.01
+Test Accuracy: 0.7611
+==================================================
+Features Selected: 40, C=2048, gamma=0.05
+Test Accuracy: 0.7771
+==================================================
+Features Selected: 40, C=2048, gamma=0.1
+Test Accuracy: 0.7700
+==================================================
+Features Selected: 40, C=2048, gamma=0.125
+Test Accuracy: 0.7684
+==================================================
+Features Selected: 40, C=2048, gamma=0.25
+Test Accuracy: 0.7597
+==================================================
+Features Selected: 40, C=2048, gamma=0.5
+Test Accuracy: 0.7445
+==================================================
+Features Selected: 40, C=2048, gamma=1
+Test Accuracy: 0.6992
+==================================================
+Features Selected: 40, C=2048, gamma=2
+Test Accuracy: 0.6224
+==================================================
+Features Selected: 40, C=2048, gamma=4
+Test Accuracy: 0.5168
+==================================================
+Features Selected: 40, C=2048, gamma=8
+Test Accuracy: 0.3900
+==================================================
+Features Selected: 40, C=4096, gamma=0.001
+Test Accuracy: 0.7166
+==================================================
+Features Selected: 40, C=4096, gamma=0.01
+Test Accuracy: 0.7632
+==================================================
+Features Selected: 40, C=4096, gamma=0.05
+Test Accuracy: 0.7763
+==================================================
+Features Selected: 40, C=4096, gamma=0.1
+Test Accuracy: 0.7692
+==================================================
+Features Selected: 40, C=4096, gamma=0.125
+Test Accuracy: 0.7684
+==================================================
+Features Selected: 40, C=4096, gamma=0.25
+Test Accuracy: 0.7597
+==================================================
+Features Selected: 40, C=4096, gamma=0.5
+Test Accuracy: 0.7445
+==================================================
+Features Selected: 40, C=4096, gamma=1
+Test Accuracy: 0.6992
+==================================================
+Features Selected: 40, C=4096, gamma=2
+Test Accuracy: 0.6224
+==================================================
+Features Selected: 40, C=4096, gamma=4
+Test Accuracy: 0.5168
+==================================================
+Features Selected: 40, C=4096, gamma=8
+Test Accuracy: 0.3900
+==================================================
+Features Selected: 40, C=8192, gamma=0.001
+Test Accuracy: 0.7379
+==================================================
+Features Selected: 40, C=8192, gamma=0.01
+Test Accuracy: 0.7650
+==================================================
+Features Selected: 40, C=8192, gamma=0.05
+Test Accuracy: 0.7753
+==================================================
+Features Selected: 40, C=8192, gamma=0.1
+Test Accuracy: 0.7695
+==================================================
+Features Selected: 40, C=8192, gamma=0.125
+Test Accuracy: 0.7684
+==================================================
+Features Selected: 40, C=8192, gamma=0.25
+Test Accuracy: 0.7597
+==================================================
+Features Selected: 40, C=8192, gamma=0.5
+Test Accuracy: 0.7445
+==================================================
+Features Selected: 40, C=8192, gamma=1
+Test Accuracy: 0.6992
+==================================================
+Features Selected: 40, C=8192, gamma=2
+Test Accuracy: 0.6224
+==================================================
+Features Selected: 40, C=8192, gamma=4
+Test Accuracy: 0.5168
+==================================================
+Features Selected: 40, C=8192, gamma=8
+Test Accuracy: 0.3900
+==================================================
+Features Selected: 40, C=16384, gamma=0.001
+Test Accuracy: 0.7500
+==================================================
+Features Selected: 40, C=16384, gamma=0.01
+Test Accuracy: 0.7632
+==================================================
+Features Selected: 40, C=16384, gamma=0.05
+Test Accuracy: 0.7755
+==================================================
+Features Selected: 40, C=16384, gamma=0.1
+Test Accuracy: 0.7695
+==================================================
+Features Selected: 40, C=16384, gamma=0.125
+Test Accuracy: 0.7684
+==================================================
+Features Selected: 40, C=16384, gamma=0.25
+Test Accuracy: 0.7597
+==================================================
+Features Selected: 40, C=16384, gamma=0.5
+Test Accuracy: 0.7445
+==================================================
+Features Selected: 40, C=16384, gamma=1
+Test Accuracy: 0.6992
+==================================================
+Features Selected: 40, C=16384, gamma=2
+Test Accuracy: 0.6224
+==================================================
+Features Selected: 40, C=16384, gamma=4
+Test Accuracy: 0.5168
+==================================================
+Features Selected: 40, C=16384, gamma=8
+Test Accuracy: 0.3900
+==================================================
+Features Selected: 40, C=32768, gamma=0.001
+Test Accuracy: 0.7595
+==================================================
+Features Selected: 40, C=32768, gamma=0.01
+Test Accuracy: 0.7642
+==================================================
+Features Selected: 40, C=32768, gamma=0.05
+Test Accuracy: 0.7755
+==================================================
+Features Selected: 40, C=32768, gamma=0.1
+Test Accuracy: 0.7695
+==================================================
+Features Selected: 40, C=32768, gamma=0.125
+Test Accuracy: 0.7684
+==================================================
+Features Selected: 40, C=32768, gamma=0.25
+Test Accuracy: 0.7597
+==================================================
+Features Selected: 40, C=32768, gamma=0.5
+Test Accuracy: 0.7445
+==================================================
+Features Selected: 40, C=32768, gamma=1
+Test Accuracy: 0.6992
+==================================================
+Features Selected: 40, C=32768, gamma=2
+Test Accuracy: 0.6224
+==================================================
+Features Selected: 40, C=32768, gamma=4
+Test Accuracy: 0.5168
+==================================================
+Features Selected: 40, C=32768, gamma=8
+Test Accuracy: 0.3900
+==================================================
+Features Selected: 40, C=65536, gamma=0.001
+Test Accuracy: 0.7597
+==================================================
+Features Selected: 40, C=65536, gamma=0.01
+Test Accuracy: 0.7642
+==================================================
+Features Selected: 40, C=65536, gamma=0.05
+Test Accuracy: 0.7755
+==================================================
+Features Selected: 40, C=65536, gamma=0.1
+Test Accuracy: 0.7695
+==================================================
+Features Selected: 40, C=65536, gamma=0.125
+Test Accuracy: 0.7684
+==================================================
+Features Selected: 40, C=65536, gamma=0.25
+Test Accuracy: 0.7597
+==================================================
+Features Selected: 40, C=65536, gamma=0.5
+Test Accuracy: 0.7445
+==================================================
+Features Selected: 40, C=65536, gamma=1
+Test Accuracy: 0.6992
+==================================================
+Features Selected: 40, C=65536, gamma=2
+Test Accuracy: 0.6224
+==================================================
+Features Selected: 40, C=65536, gamma=4
+Test Accuracy: 0.5168
+==================================================
+Features Selected: 40, C=65536, gamma=8
+Test Accuracy: 0.3900
+==================================================
+Features Selected: 40, C=131072, gamma=0.001
+Test Accuracy: 0.7639
+==================================================
+Features Selected: 40, C=131072, gamma=0.01
+Test Accuracy: 0.7642
+==================================================
+Features Selected: 40, C=131072, gamma=0.05
+Test Accuracy: 0.7755
+==================================================
+Features Selected: 40, C=131072, gamma=0.1
+Test Accuracy: 0.7695
+==================================================
+Features Selected: 40, C=131072, gamma=0.125
+Test Accuracy: 0.7684
+==================================================
+Features Selected: 40, C=131072, gamma=0.25
+Test Accuracy: 0.7597
+==================================================
+Features Selected: 40, C=131072, gamma=0.5
+Test Accuracy: 0.7445
+==================================================
+Features Selected: 40, C=131072, gamma=1
+Test Accuracy: 0.6992
+==================================================
+Features Selected: 40, C=131072, gamma=2
+Test Accuracy: 0.6224
+==================================================
+Features Selected: 40, C=131072, gamma=4
+Test Accuracy: 0.5168
+==================================================
+Features Selected: 40, C=131072, gamma=8
+Test Accuracy: 0.3900
+==================================================
+Features Selected: 35, C=2048, gamma=0.001
+Test Accuracy: 0.6287
+==================================================
+Features Selected: 35, C=2048, gamma=0.01
+Test Accuracy: 0.7363
+==================================================
+Features Selected: 35, C=2048, gamma=0.05
+Test Accuracy: 0.7382
+==================================================
+Features Selected: 35, C=2048, gamma=0.1
+Test Accuracy: 0.7345
+==================================================
+Features Selected: 35, C=2048, gamma=0.125
+Test Accuracy: 0.7313
+==================================================
+Features Selected: 35, C=2048, gamma=0.25
+Test Accuracy: 0.7234
+==================================================
+Features Selected: 35, C=2048, gamma=0.5
+Test Accuracy: 0.7258
+==================================================
+Features Selected: 35, C=2048, gamma=1
+Test Accuracy: 0.7089
+==================================================
+Features Selected: 35, C=2048, gamma=2
+Test Accuracy: 0.6650
+==================================================
+Features Selected: 35, C=2048, gamma=4
+Test Accuracy: 0.5874
+==================================================
+Features Selected: 35, C=2048, gamma=8
+Test Accuracy: 0.4716
+==================================================
+Features Selected: 35, C=4096, gamma=0.001
+Test Accuracy: 0.6647
+==================================================
+Features Selected: 35, C=4096, gamma=0.01
+Test Accuracy: 0.7411
+==================================================
+Features Selected: 35, C=4096, gamma=0.05
+Test Accuracy: 0.7392
+==================================================
+Features Selected: 35, C=4096, gamma=0.1
+Test Accuracy: 0.7353
+==================================================
+Features Selected: 35, C=4096, gamma=0.125
+Test Accuracy: 0.7324
+==================================================
+Features Selected: 35, C=4096, gamma=0.25
+Test Accuracy: 0.7237
+==================================================
+Features Selected: 35, C=4096, gamma=0.5
+Test Accuracy: 0.7253
+==================================================
+Features Selected: 35, C=4096, gamma=1
+Test Accuracy: 0.7089
+==================================================
+Features Selected: 35, C=4096, gamma=2
+Test Accuracy: 0.6650
+==================================================
+Features Selected: 35, C=4096, gamma=4
+Test Accuracy: 0.5874
+==================================================
+Features Selected: 35, C=4096, gamma=8
+Test Accuracy: 0.4716
+==================================================
+Features Selected: 35, C=8192, gamma=0.001
+Test Accuracy: 0.6882
+==================================================
+Features Selected: 35, C=8192, gamma=0.01
+Test Accuracy: 0.7453
+==================================================
+Features Selected: 35, C=8192, gamma=0.05
+Test Accuracy: 0.7392
+==================================================
+Features Selected: 35, C=8192, gamma=0.1
+Test Accuracy: 0.7345
+==================================================
+Features Selected: 35, C=8192, gamma=0.125
+Test Accuracy: 0.7318
+==================================================
+Features Selected: 35, C=8192, gamma=0.25
+Test Accuracy: 0.7234
+==================================================
+Features Selected: 35, C=8192, gamma=0.5
+Test Accuracy: 0.7253
+==================================================
+Features Selected: 35, C=8192, gamma=1
+Test Accuracy: 0.7089
+==================================================
+Features Selected: 35, C=8192, gamma=2
+Test Accuracy: 0.6650
+==================================================
+Features Selected: 35, C=8192, gamma=4
+Test Accuracy: 0.5874
+==================================================
+Features Selected: 35, C=8192, gamma=8
+Test Accuracy: 0.4716
+==================================================
+Features Selected: 35, C=16384, gamma=0.001
+Test Accuracy: 0.7105
+==================================================
+Features Selected: 35, C=16384, gamma=0.01
+Test Accuracy: 0.7468
+==================================================
+Features Selected: 35, C=16384, gamma=0.05
+Test Accuracy: 0.7366
+==================================================
+Features Selected: 35, C=16384, gamma=0.1
+Test Accuracy: 0.7345
+==================================================
+Features Selected: 35, C=16384, gamma=0.125
+Test Accuracy: 0.7318
+==================================================
+Features Selected: 35, C=16384, gamma=0.25
+Test Accuracy: 0.7232
+==================================================
+Features Selected: 35, C=16384, gamma=0.5
+Test Accuracy: 0.7253
+==================================================
+Features Selected: 35, C=16384, gamma=1
+Test Accuracy: 0.7089
+==================================================
+Features Selected: 35, C=16384, gamma=2
+Test Accuracy: 0.6650
+==================================================
+Features Selected: 35, C=16384, gamma=4
+Test Accuracy: 0.5874
+==================================================
+Features Selected: 35, C=16384, gamma=8
+Test Accuracy: 0.4716
+==================================================
+Features Selected: 35, C=32768, gamma=0.001
+Test Accuracy: 0.7258
+==================================================
+Features Selected: 35, C=32768, gamma=0.01
+Test Accuracy: 0.7439
+==================================================
+Features Selected: 35, C=32768, gamma=0.05
+Test Accuracy: 0.7384
+==================================================
+Features Selected: 35, C=32768, gamma=0.1
+Test Accuracy: 0.7339
+==================================================
+Features Selected: 35, C=32768, gamma=0.125
+Test Accuracy: 0.7318
+==================================================
+Features Selected: 35, C=32768, gamma=0.25
+Test Accuracy: 0.7232
+==================================================
+Features Selected: 35, C=32768, gamma=0.5
+Test Accuracy: 0.7253
+==================================================
+Features Selected: 35, C=32768, gamma=1
+Test Accuracy: 0.7089
+==================================================
+Features Selected: 35, C=32768, gamma=2
+Test Accuracy: 0.6650
+==================================================
+Features Selected: 35, C=32768, gamma=4
+Test Accuracy: 0.5874
+==================================================
+Features Selected: 35, C=32768, gamma=8
+Test Accuracy: 0.4716
+==================================================
+Features Selected: 35, C=65536, gamma=0.001
+Test Accuracy: 0.7350
+==================================================
+Features Selected: 35, C=65536, gamma=0.01
+Test Accuracy: 0.7453
+==================================================
+Features Selected: 35, C=65536, gamma=0.05
+Test Accuracy: 0.7374
+==================================================
+Features Selected: 35, C=65536, gamma=0.1
+Test Accuracy: 0.7339
+==================================================
+Features Selected: 35, C=65536, gamma=0.125
+Test Accuracy: 0.7316
+==================================================
+Features Selected: 35, C=65536, gamma=0.25
+Test Accuracy: 0.7232
+==================================================
+Features Selected: 35, C=65536, gamma=0.5
+Test Accuracy: 0.7253
+==================================================
+Features Selected: 35, C=65536, gamma=1
+Test Accuracy: 0.7089
+==================================================
+Features Selected: 35, C=65536, gamma=2
+Test Accuracy: 0.6650
+==================================================
+Features Selected: 35, C=65536, gamma=4
+Test Accuracy: 0.5874
+==================================================
+Features Selected: 35, C=65536, gamma=8
+Test Accuracy: 0.4716
+==================================================
+Features Selected: 35, C=131072, gamma=0.001
+Test Accuracy: 0.7418
+==================================================
+Features Selected: 35, C=131072, gamma=0.01
+Test Accuracy: 0.7455
+==================================================
+Features Selected: 35, C=131072, gamma=0.05
+Test Accuracy: 0.7379
+==================================================
+Features Selected: 35, C=131072, gamma=0.1
+Test Accuracy: 0.7337
+==================================================
+Features Selected: 35, C=131072, gamma=0.125
+Test Accuracy: 0.7316
+==================================================
+Features Selected: 35, C=131072, gamma=0.25
+Test Accuracy: 0.7232
+==================================================
+Features Selected: 35, C=131072, gamma=0.5
+Test Accuracy: 0.7253
+==================================================
+Features Selected: 35, C=131072, gamma=1
+Test Accuracy: 0.7089
+==================================================
+Features Selected: 35, C=131072, gamma=2
+Test Accuracy: 0.6650
+==================================================
+Features Selected: 35, C=131072, gamma=4
+Test Accuracy: 0.5874
+==================================================
+Features Selected: 35, C=131072, gamma=8
+Test Accuracy: 0.4716
+==================================================
+Features Selected: 30, C=2048, gamma=0.001
+Test Accuracy: 0.6250
+==================================================
+Features Selected: 30, C=2048, gamma=0.01
+Test Accuracy: 0.7358
+==================================================
+Features Selected: 30, C=2048, gamma=0.05
+Test Accuracy: 0.7411
+==================================================
+Features Selected: 30, C=2048, gamma=0.1
+Test Accuracy: 0.7437
+==================================================
+Features Selected: 30, C=2048, gamma=0.125
+Test Accuracy: 0.7421
+==================================================
+Features Selected: 30, C=2048, gamma=0.25
+Test Accuracy: 0.7324
+==================================================
+Features Selected: 30, C=2048, gamma=0.5
+Test Accuracy: 0.7303
+==================================================
+Features Selected: 30, C=2048, gamma=1
+Test Accuracy: 0.7179
+==================================================
+Features Selected: 30, C=2048, gamma=2
+Test Accuracy: 0.6755
+==================================================
+Features Selected: 30, C=2048, gamma=4
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 30, C=2048, gamma=8
+Test Accuracy: 0.5003
+==================================================
+Features Selected: 30, C=4096, gamma=0.001
+Test Accuracy: 0.6587
+==================================================
+Features Selected: 30, C=4096, gamma=0.01
+Test Accuracy: 0.7439
+==================================================
+Features Selected: 30, C=4096, gamma=0.05
+Test Accuracy: 0.7439
+==================================================
+Features Selected: 30, C=4096, gamma=0.1
+Test Accuracy: 0.7429
+==================================================
+Features Selected: 30, C=4096, gamma=0.125
+Test Accuracy: 0.7411
+==================================================
+Features Selected: 30, C=4096, gamma=0.25
+Test Accuracy: 0.7318
+==================================================
+Features Selected: 30, C=4096, gamma=0.5
+Test Accuracy: 0.7300
+==================================================
+Features Selected: 30, C=4096, gamma=1
+Test Accuracy: 0.7179
+==================================================
+Features Selected: 30, C=4096, gamma=2
+Test Accuracy: 0.6755
+==================================================
+Features Selected: 30, C=4096, gamma=4
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 30, C=4096, gamma=8
+Test Accuracy: 0.5003
+==================================================
+Features Selected: 30, C=8192, gamma=0.001
+Test Accuracy: 0.6826
+==================================================
+Features Selected: 30, C=8192, gamma=0.01
+Test Accuracy: 0.7492
+==================================================
+Features Selected: 30, C=8192, gamma=0.05
+Test Accuracy: 0.7426
+==================================================
+Features Selected: 30, C=8192, gamma=0.1
+Test Accuracy: 0.7421
+==================================================
+Features Selected: 30, C=8192, gamma=0.125
+Test Accuracy: 0.7408
+==================================================
+Features Selected: 30, C=8192, gamma=0.25
+Test Accuracy: 0.7313
+==================================================
+Features Selected: 30, C=8192, gamma=0.5
+Test Accuracy: 0.7300
+==================================================
+Features Selected: 30, C=8192, gamma=1
+Test Accuracy: 0.7179
+==================================================
+Features Selected: 30, C=8192, gamma=2
+Test Accuracy: 0.6755
+==================================================
+Features Selected: 30, C=8192, gamma=4
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 30, C=8192, gamma=8
+Test Accuracy: 0.5003
+==================================================
+Features Selected: 30, C=16384, gamma=0.001
+Test Accuracy: 0.7082
+==================================================
+Features Selected: 30, C=16384, gamma=0.01
+Test Accuracy: 0.7513
+==================================================
+Features Selected: 30, C=16384, gamma=0.05
+Test Accuracy: 0.7413
+==================================================
+Features Selected: 30, C=16384, gamma=0.1
+Test Accuracy: 0.7424
+==================================================
+Features Selected: 30, C=16384, gamma=0.125
+Test Accuracy: 0.7411
+==================================================
+Features Selected: 30, C=16384, gamma=0.25
+Test Accuracy: 0.7311
+==================================================
+Features Selected: 30, C=16384, gamma=0.5
+Test Accuracy: 0.7300
+==================================================
+Features Selected: 30, C=16384, gamma=1
+Test Accuracy: 0.7179
+==================================================
+Features Selected: 30, C=16384, gamma=2
+Test Accuracy: 0.6755
+==================================================
+Features Selected: 30, C=16384, gamma=4
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 30, C=16384, gamma=8
+Test Accuracy: 0.5003
+==================================================
+Features Selected: 30, C=32768, gamma=0.001
+Test Accuracy: 0.7250
+==================================================
+Features Selected: 30, C=32768, gamma=0.01
+Test Accuracy: 0.7479
+==================================================
+Features Selected: 30, C=32768, gamma=0.05
+Test Accuracy: 0.7413
+==================================================
+Features Selected: 30, C=32768, gamma=0.1
+Test Accuracy: 0.7424
+==================================================
+Features Selected: 30, C=32768, gamma=0.125
+Test Accuracy: 0.7405
+==================================================
+Features Selected: 30, C=32768, gamma=0.25
+Test Accuracy: 0.7311
+==================================================
+Features Selected: 30, C=32768, gamma=0.5
+Test Accuracy: 0.7300
+==================================================
+Features Selected: 30, C=32768, gamma=1
+Test Accuracy: 0.7179
+==================================================
+Features Selected: 30, C=32768, gamma=2
+Test Accuracy: 0.6755
+==================================================
+Features Selected: 30, C=32768, gamma=4
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 30, C=32768, gamma=8
+Test Accuracy: 0.5003
+==================================================
+Features Selected: 30, C=65536, gamma=0.001
+Test Accuracy: 0.7342
+==================================================
+Features Selected: 30, C=65536, gamma=0.01
+Test Accuracy: 0.7487
+==================================================
+Features Selected: 30, C=65536, gamma=0.05
+Test Accuracy: 0.7413
+==================================================
+Features Selected: 30, C=65536, gamma=0.1
+Test Accuracy: 0.7424
+==================================================
+Features Selected: 30, C=65536, gamma=0.125
+Test Accuracy: 0.7405
+==================================================
+Features Selected: 30, C=65536, gamma=0.25
+Test Accuracy: 0.7311
+==================================================
+Features Selected: 30, C=65536, gamma=0.5
+Test Accuracy: 0.7300
+==================================================
+Features Selected: 30, C=65536, gamma=1
+Test Accuracy: 0.7179
+==================================================
+Features Selected: 30, C=65536, gamma=2
+Test Accuracy: 0.6755
+==================================================
+Features Selected: 30, C=65536, gamma=4
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 30, C=65536, gamma=8
+Test Accuracy: 0.5003
+==================================================
+Features Selected: 30, C=131072, gamma=0.001
+Test Accuracy: 0.7418
+==================================================
+Features Selected: 30, C=131072, gamma=0.01
+Test Accuracy: 0.7489
+==================================================
+Features Selected: 30, C=131072, gamma=0.05
+Test Accuracy: 0.7413
+==================================================
+Features Selected: 30, C=131072, gamma=0.1
+Test Accuracy: 0.7424
+==================================================
+Features Selected: 30, C=131072, gamma=0.125
+Test Accuracy: 0.7405
+==================================================
+Features Selected: 30, C=131072, gamma=0.25
+Test Accuracy: 0.7311
+==================================================
+Features Selected: 30, C=131072, gamma=0.5
+Test Accuracy: 0.7300
+==================================================
+Features Selected: 30, C=131072, gamma=1
+Test Accuracy: 0.7179
+==================================================
+Features Selected: 30, C=131072, gamma=2
+Test Accuracy: 0.6755
+==================================================
+Features Selected: 30, C=131072, gamma=4
+Test Accuracy: 0.6129
+==================================================
+Features Selected: 30, C=131072, gamma=8
+Test Accuracy: 0.5003
+==================================================
+Features Selected: 25, C=2048, gamma=0.001
+Test Accuracy: 0.5245
+==================================================
+Features Selected: 25, C=2048, gamma=0.01
+Test Accuracy: 0.6655
+==================================================
+Features Selected: 25, C=2048, gamma=0.05
+Test Accuracy: 0.7116
+==================================================
+Features Selected: 25, C=2048, gamma=0.1
+Test Accuracy: 0.7089
+==================================================
+Features Selected: 25, C=2048, gamma=0.125
+Test Accuracy: 0.7126
+==================================================
+Features Selected: 25, C=2048, gamma=0.25
+Test Accuracy: 0.7042
+==================================================
+Features Selected: 25, C=2048, gamma=0.5
+Test Accuracy: 0.6953
+==================================================
+Features Selected: 25, C=2048, gamma=1
+Test Accuracy: 0.6732
+==================================================
+Features Selected: 25, C=2048, gamma=2
+Test Accuracy: 0.6595
+==================================================
+Features Selected: 25, C=2048, gamma=4
+Test Accuracy: 0.6461
+==================================================
+Features Selected: 25, C=2048, gamma=8
+Test Accuracy: 0.6153
+==================================================
+Features Selected: 25, C=4096, gamma=0.001
+Test Accuracy: 0.5500
+==================================================
+Features Selected: 25, C=4096, gamma=0.01
+Test Accuracy: 0.6839
+==================================================
+Features Selected: 25, C=4096, gamma=0.05
+Test Accuracy: 0.7145
+==================================================
+Features Selected: 25, C=4096, gamma=0.1
+Test Accuracy: 0.7126
+==================================================
+Features Selected: 25, C=4096, gamma=0.125
+Test Accuracy: 0.7168
+==================================================
+Features Selected: 25, C=4096, gamma=0.25
+Test Accuracy: 0.7016
+==================================================
+Features Selected: 25, C=4096, gamma=0.5
+Test Accuracy: 0.6937
+==================================================
+Features Selected: 25, C=4096, gamma=1
+Test Accuracy: 0.6721
+==================================================
+Features Selected: 25, C=4096, gamma=2
+Test Accuracy: 0.6597
+==================================================
+Features Selected: 25, C=4096, gamma=4
+Test Accuracy: 0.6461
+==================================================
+Features Selected: 25, C=4096, gamma=8
+Test Accuracy: 0.6153
+==================================================
+Features Selected: 25, C=8192, gamma=0.001
+Test Accuracy: 0.5832
+==================================================
+Features Selected: 25, C=8192, gamma=0.01
+Test Accuracy: 0.7047
+==================================================
+Features Selected: 25, C=8192, gamma=0.05
+Test Accuracy: 0.7176
+==================================================
+Features Selected: 25, C=8192, gamma=0.1
+Test Accuracy: 0.7174
+==================================================
+Features Selected: 25, C=8192, gamma=0.125
+Test Accuracy: 0.7158
+==================================================
+Features Selected: 25, C=8192, gamma=0.25
+Test Accuracy: 0.7058
+==================================================
+Features Selected: 25, C=8192, gamma=0.5
+Test Accuracy: 0.6921
+==================================================
+Features Selected: 25, C=8192, gamma=1
+Test Accuracy: 0.6724
+==================================================
+Features Selected: 25, C=8192, gamma=2
+Test Accuracy: 0.6597
+==================================================
+Features Selected: 25, C=8192, gamma=4
+Test Accuracy: 0.6461
+==================================================
+Features Selected: 25, C=8192, gamma=8
+Test Accuracy: 0.6153
+==================================================
+Features Selected: 25, C=16384, gamma=0.001
+Test Accuracy: 0.6082
+==================================================
+Features Selected: 25, C=16384, gamma=0.01
+Test Accuracy: 0.7105
+==================================================
+Features Selected: 25, C=16384, gamma=0.05
+Test Accuracy: 0.7250
+==================================================
+Features Selected: 25, C=16384, gamma=0.1
+Test Accuracy: 0.7145
+==================================================
+Features Selected: 25, C=16384, gamma=0.125
+Test Accuracy: 0.7118
+==================================================
+Features Selected: 25, C=16384, gamma=0.25
+Test Accuracy: 0.7029
+==================================================
+Features Selected: 25, C=16384, gamma=0.5
+Test Accuracy: 0.6918
+==================================================
+Features Selected: 25, C=16384, gamma=1
+Test Accuracy: 0.6726
+==================================================
+Features Selected: 25, C=16384, gamma=2
+Test Accuracy: 0.6597
+==================================================
+Features Selected: 25, C=16384, gamma=4
+Test Accuracy: 0.6461
+==================================================
+Features Selected: 25, C=16384, gamma=8
+Test Accuracy: 0.6153
+==================================================
+Features Selected: 25, C=32768, gamma=0.001
+Test Accuracy: 0.6308
+==================================================
+Features Selected: 25, C=32768, gamma=0.01
+Test Accuracy: 0.7176
+==================================================
+Features Selected: 25, C=32768, gamma=0.05
+Test Accuracy: 0.7226
+==================================================
+Features Selected: 25, C=32768, gamma=0.1
+Test Accuracy: 0.7142
+==================================================
+Features Selected: 25, C=32768, gamma=0.125
+Test Accuracy: 0.7121
+==================================================
+Features Selected: 25, C=32768, gamma=0.25
+Test Accuracy: 0.7037
+==================================================
+Features Selected: 25, C=32768, gamma=0.5
+Test Accuracy: 0.6926
+==================================================
+Features Selected: 25, C=32768, gamma=1
+Test Accuracy: 0.6726
+==================================================
+Features Selected: 25, C=32768, gamma=2
+Test Accuracy: 0.6597
+==================================================
+Features Selected: 25, C=32768, gamma=4
+Test Accuracy: 0.6461
+==================================================
+Features Selected: 25, C=32768, gamma=8
+Test Accuracy: 0.6153
+==================================================
+Features Selected: 25, C=65536, gamma=0.001
+Test Accuracy: 0.6513
+==================================================
+Features Selected: 25, C=65536, gamma=0.01
+Test Accuracy: 0.7200
+==================================================
+Features Selected: 25, C=65536, gamma=0.05
+Test Accuracy: 0.7179
+==================================================
+Features Selected: 25, C=65536, gamma=0.1
+Test Accuracy: 0.7161
+==================================================
+Features Selected: 25, C=65536, gamma=0.125
+Test Accuracy: 0.7121
+==================================================
+Features Selected: 25, C=65536, gamma=0.25
+Test Accuracy: 0.7032
+==================================================
+Features Selected: 25, C=65536, gamma=0.5
+Test Accuracy: 0.6916
+==================================================
+Features Selected: 25, C=65536, gamma=1
+Test Accuracy: 0.6726
+==================================================
+Features Selected: 25, C=65536, gamma=2
+Test Accuracy: 0.6597
+==================================================
+Features Selected: 25, C=65536, gamma=4
+Test Accuracy: 0.6461
+==================================================
+Features Selected: 25, C=65536, gamma=8
+Test Accuracy: 0.6153
+==================================================
+Features Selected: 25, C=131072, gamma=0.001
+Test Accuracy: 0.6697
+==================================================
+Features Selected: 25, C=131072, gamma=0.01
+Test Accuracy: 0.7216
+==================================================
+Features Selected: 25, C=131072, gamma=0.05
+Test Accuracy: 0.7174
+==================================================
+Features Selected: 25, C=131072, gamma=0.1
+Test Accuracy: 0.7174
+==================================================
+Features Selected: 25, C=131072, gamma=0.125
+Test Accuracy: 0.7132
+==================================================
+Features Selected: 25, C=131072, gamma=0.25
+Test Accuracy: 0.7045
+==================================================
+Features Selected: 25, C=131072, gamma=0.5
+Test Accuracy: 0.6913
+==================================================
+Features Selected: 25, C=131072, gamma=1
+Test Accuracy: 0.6726
+==================================================
+Features Selected: 25, C=131072, gamma=2
+Test Accuracy: 0.6597
+==================================================
+Features Selected: 25, C=131072, gamma=4
+Test Accuracy: 0.6461
+==================================================
+Features Selected: 25, C=131072, gamma=8
+Test Accuracy: 0.6153
+==================================================
+Features Selected: all, C=2048, gamma=0.001
+Test Accuracy: 0.7139
+==================================================
+Features Selected: all, C=2048, gamma=0.01
+Test Accuracy: 0.7642
+==================================================
+Features Selected: all, C=2048, gamma=0.05
+Test Accuracy: 0.7811
+==================================================
+Features Selected: all, C=2048, gamma=0.1
+Test Accuracy: 0.7755
+==================================================
+Features Selected: all, C=2048, gamma=0.125
+Test Accuracy: 0.7766
+==================================================
+Features Selected: all, C=2048, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: all, C=2048, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: all, C=2048, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: all, C=2048, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: all, C=2048, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: all, C=2048, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: all, C=4096, gamma=0.001
+Test Accuracy: 0.7279
+==================================================
+Features Selected: all, C=4096, gamma=0.01
+Test Accuracy: 0.7676
+==================================================
+Features Selected: all, C=4096, gamma=0.05
+Test Accuracy: 0.7803
+==================================================
+Features Selected: all, C=4096, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: all, C=4096, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: all, C=4096, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: all, C=4096, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: all, C=4096, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: all, C=4096, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: all, C=4096, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: all, C=4096, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: all, C=8192, gamma=0.001
+Test Accuracy: 0.7426
+==================================================
+Features Selected: all, C=8192, gamma=0.01
+Test Accuracy: 0.7658
+==================================================
+Features Selected: all, C=8192, gamma=0.05
+Test Accuracy: 0.7795
+==================================================
+Features Selected: all, C=8192, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: all, C=8192, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: all, C=8192, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: all, C=8192, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: all, C=8192, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: all, C=8192, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: all, C=8192, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: all, C=8192, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: all, C=16384, gamma=0.001
+Test Accuracy: 0.7571
+==================================================
+Features Selected: all, C=16384, gamma=0.01
+Test Accuracy: 0.7653
+==================================================
+Features Selected: all, C=16384, gamma=0.05
+Test Accuracy: 0.7792
+==================================================
+Features Selected: all, C=16384, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: all, C=16384, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: all, C=16384, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: all, C=16384, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: all, C=16384, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: all, C=16384, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: all, C=16384, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: all, C=16384, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: all, C=32768, gamma=0.001
+Test Accuracy: 0.7629
+==================================================
+Features Selected: all, C=32768, gamma=0.01
+Test Accuracy: 0.7655
+==================================================
+Features Selected: all, C=32768, gamma=0.05
+Test Accuracy: 0.7792
+==================================================
+Features Selected: all, C=32768, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: all, C=32768, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: all, C=32768, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: all, C=32768, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: all, C=32768, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: all, C=32768, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: all, C=32768, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: all, C=32768, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: all, C=65536, gamma=0.001
+Test Accuracy: 0.7668
+==================================================
+Features Selected: all, C=65536, gamma=0.01
+Test Accuracy: 0.7647
+==================================================
+Features Selected: all, C=65536, gamma=0.05
+Test Accuracy: 0.7792
+==================================================
+Features Selected: all, C=65536, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: all, C=65536, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: all, C=65536, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: all, C=65536, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: all, C=65536, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: all, C=65536, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: all, C=65536, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: all, C=65536, gamma=8
+Test Accuracy: 0.3739
+==================================================
+Features Selected: all, C=131072, gamma=0.001
+Test Accuracy: 0.7666
+==================================================
+Features Selected: all, C=131072, gamma=0.01
+Test Accuracy: 0.7650
+==================================================
+Features Selected: all, C=131072, gamma=0.05
+Test Accuracy: 0.7792
+==================================================
+Features Selected: all, C=131072, gamma=0.1
+Test Accuracy: 0.7753
+==================================================
+Features Selected: all, C=131072, gamma=0.125
+Test Accuracy: 0.7768
+==================================================
+Features Selected: all, C=131072, gamma=0.25
+Test Accuracy: 0.7626
+==================================================
+Features Selected: all, C=131072, gamma=0.5
+Test Accuracy: 0.7466
+==================================================
+Features Selected: all, C=131072, gamma=1
+Test Accuracy: 0.6953
+==================================================
+Features Selected: all, C=131072, gamma=2
+Test Accuracy: 0.6129
+==================================================
+Features Selected: all, C=131072, gamma=4
+Test Accuracy: 0.4971
+==================================================
+Features Selected: all, C=131072, gamma=8
+Test Accuracy: 0.3739
+==================================================

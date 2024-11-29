@@ -1,0 +1,52 @@
+Forward Elimination Results (Fixed Parameters)
+================================================================================
+
+Selected Feature: num_incoming_cum
+Current Features: ['num_incoming_cum']
+Accuracy: 0.1616
+--------------------------------------------------
+Selected Feature: std_total
+Current Features: ['num_incoming_cum', 'std_total']
+Accuracy: 0.4379
+--------------------------------------------------
+Selected Feature: num_incoming_thirty
+Current Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty']
+Accuracy: 0.5718
+--------------------------------------------------
+Selected Feature: std_dev_interval
+Current Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty', 'std_dev_interval']
+Accuracy: 0.6813
+--------------------------------------------------
+Selected Feature: std_outgoing_burst
+Current Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty', 'std_dev_interval', 'std_outgoing_burst']
+Accuracy: 0.7305
+--------------------------------------------------
+Selected Feature: std_total_cum
+Current Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty', 'std_dev_interval', 'std_outgoing_burst', 'std_total_cum']
+Accuracy: 0.7621
+--------------------------------------------------
+Selected Feature: num_outgoing_last_thirty
+Current Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty', 'std_dev_interval', 'std_outgoing_burst', 'std_total_cum', 'num_outgoing_last_thirty']
+Accuracy: 0.7837
+--------------------------------------------------
+Selected Feature: avg_cum_incoming
+Current Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty', 'std_dev_interval', 'std_outgoing_burst', 'std_total_cum', 'num_outgoing_last_thirty', 'avg_cum_incoming']
+Accuracy: 0.7926
+--------------------------------------------------
+Selected Feature: std_timestamps
+Current Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty', 'std_dev_interval', 'std_outgoing_burst', 'std_total_cum', 'num_outgoing_last_thirty', 'avg_cum_incoming', 'std_timestamps']
+Accuracy: 0.8050
+--------------------------------------------------
+Selected Feature: num_incoming_burst
+Current Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty', 'std_dev_interval', 'std_outgoing_burst', 'std_total_cum', 'num_outgoing_last_thirty', 'avg_cum_incoming', 'std_timestamps', 'num_incoming_burst']
+Accuracy: 0.8097
+--------------------------------------------------
+Selected Feature: num_outgoing_cum
+Current Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty', 'std_dev_interval', 'std_outgoing_burst', 'std_total_cum', 'num_outgoing_last_thirty', 'avg_cum_incoming', 'std_timestamps', 'num_incoming_burst', 'num_outgoing_cum']
+Accuracy: 0.8205
+--------------------------------------------------
+================================================================================
+Final Selected Features and Performance
+Selected Features: ['num_incoming_cum', 'std_total', 'num_incoming_thirty', 'std_dev_interval', 'std_outgoing_burst', 'std_total_cum', 'num_outgoing_last_thirty', 'avg_cum_incoming', 'std_timestamps', 'num_incoming_burst', 'num_outgoing_cum']
+Best Accuracy: 0.8205
+================================================================================
