@@ -1,9 +1,13 @@
 import pandas as pd
+from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from data.preprocess import check_and_preprocess_data
-from evaluation import evaluate_multi
+from sklearn.metrics import accuracy_score
+from sklearn.feature_selection import SelectKBest, f_classif
+
+from evaluation import evaluate_multi, evaluate_binary
 
 def train_rf_cw(X, y, X_train, X_test, y_train, y_test):
     # best performing model in the closed world scenario
@@ -16,6 +20,8 @@ def train_rf_cw(X, y, X_train, X_test, y_train, y_test):
     X_test_scaled = pd.DataFrame(scaler.transform(X_test), columns=X.columns)
 
     # random forest model
+    # these parameters were selected through iterative testing across various hyperparameter combinations.
+    # can be found in /src/experiments/closedworld/cw_rf_backward_elimination.txt
     rf_model = RandomForestClassifier(
         n_estimators=50,
         max_depth=None,
@@ -54,28 +60,61 @@ def train_rf_cw(X, y, X_train, X_test, y_train, y_test):
     y_proba = rf_model.predict_proba(X_test_selected_scaled)
     evaluate_multi(y_test, y_pred, y_proba, class_names, save_path_details="cw_rf", save_plots=True)
 
+def train_svm_ow_binary(X, y, X_train, X_test, y_train, y_test):
+    # best performing model in the open world binary scenario
+    print("\n========Open World- Binary (SVM)========")
+    num_features=40
+    C_value=2048
+    gamma_value=0.25
 
+    selector = SelectKBest(score_func=f_classif, k=num_features)
+    X_selected = selector.fit_transform(X, y)
     
+    # Scale the features to the range [-1, 1]
+    scaler = MinMaxScaler(feature_range=(-1, 1))
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.fit_transform(X_test)
+
+    # Create an SVM classifier with the specified parameters
+    svm_model = svm.SVC(kernel='rbf', C=C_value, gamma=gamma_value)
+
+    # Train the SVM model on the training data
+    svm_model.fit(X_train_scaled, y_train)
+
+    # Use the trained classifier to predict labels for the test data
+    y_pred = svm_model.predict(X_test_scaled)
+
+    # Evaluate the accuracy of the classifier
+    accuracy = accuracy_score(y_test, y_pred)
+    print('Accuracy:', accuracy)
 
 
 
 def main():
     # 파일 경로
-    ow_path = 'data/csv/openworld_data.csv'
     cw_path = 'data/csv/closedworld_data.csv'
+    ow_binary_path = 'data/csv/openworld_binary_data.csv'
+    ow_multi_path = 'data/csv/openworld_multi_data.csv'
 
-    check_and_preprocess_data(ow_path, cw_path)
+    check_and_preprocess_data(cw_path, ow_binary_path, ow_multi_path)
 
-    df = pd.read_csv(cw_path)
+    # Best performing model and params in closed world
+    df_cw = pd.read_csv(cw_path)
+    X_cw = df_cw.drop(columns=['Label'])
+    y_cw = df_cw['Label']
 
-    # Feature와 Label 정의
-    X = df.drop(columns=['Label'])  # 'Label'이 타겟 컬럼
-    y = df['Label']
+    X_train, X_test, y_train, y_test = train_test_split(X_cw, y_cw, test_size=0.2, stratify=y_cw, random_state=42)
 
-    # 데이터셋 분리
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
+    # train_rf_cw(X_cw, y_cw, X_train, X_test, y_train, y_test)
+    
+    # Best performing model and params in open world binary
+    df_ow = pd.read_csv(ow_binary_path)
+    X_ow = df_ow.drop(columns=['Label'])
+    y_ow = df_ow['Label']
 
-    train_rf_cw(X, y, X_train, X_test, y_train, y_test)
+    X_train, X_test, y_train, y_test = train_test_split(X_ow, y_ow, test_size=0.2, stratify=y_ow, random_state=42)
+    
+    train_svm_ow_binary(X_ow, y_ow, X_train, X_test, y_train, y_test)
     
 
 if __name__ == "__main__":
