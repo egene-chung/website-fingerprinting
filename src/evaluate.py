@@ -1,15 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics import (
-    accuracy_score, 
-    precision_score, 
-    recall_score, 
-    f1_score, 
-    roc_auc_score,
-    precision_recall_curve,
-    roc_curve
-)
-
+from sklearn.metrics import (accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, precision_recall_curve, roc_curve)
 
 def evaluate_multi(y_true, y_pred):
     # evaluate multi-class classification in closedworld scenario => Monitored(0-94)
@@ -60,7 +51,7 @@ def evaluate_binary(y_true, y_pred, y_prob=None):
         plt.title("Precision-Recall Curve")
         plt.legend(loc="best")
         plt.grid()
-        plt.savefig(f"results/ow_binary_precision_recall_curve.png")
+        plt.savefig(f"main_results/ow_binary_precision_recall_curve.png")
         plt.close()
 
         # ROC Curve
@@ -72,5 +63,5 @@ def evaluate_binary(y_true, y_pred, y_prob=None):
         plt.title("ROC Curve")
         plt.legend(loc="best")
         plt.grid()
-        plt.savefig(f"results/ow_binary_roc_curve.png")
+        plt.savefig(f"main_results/ow_binary_roc_curve.png")
         plt.close()
