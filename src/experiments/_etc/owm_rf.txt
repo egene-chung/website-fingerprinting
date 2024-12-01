@@ -1,0 +1,747 @@
+Stratified K-Fold Performance (No Feature Importance)
+================================================================================
+
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8227
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.8098
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8298
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8209
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8218
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.8092
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8292
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8174
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8072
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.8004
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.7010
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7013
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8156
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.8038
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8277
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8156
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8149
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.8008
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8248
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8126
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7996
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7941
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6947
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6975
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8009
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7873
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8152
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8031
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7983
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7809
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8142
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8027
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7829
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7788
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6826
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6868
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7708
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7528
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.7936
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7811
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7689
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7435
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.7940
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7753
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7557
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7524
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6666
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6715
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8178
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.8066
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8267
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8169
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8169
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.8006
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8275
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8158
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8007
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7961
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6917
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6943
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8143
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.8021
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8260
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8133
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8130
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7971
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8244
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8121
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7970
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7926
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6920
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6945
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8009
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7873
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8152
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8031
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7983
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7809
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8142
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8027
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7829
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7788
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6826
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6868
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7708
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7528
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.7936
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7811
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7689
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7435
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.7940
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7753
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7557
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7524
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6666
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6715
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8050
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7888
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8192
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8079
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8046
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7835
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8198
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8013
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7875
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7817
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6799
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6847
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8018
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7872
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8184
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8058
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.8015
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7815
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8170
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8019
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7845
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7797
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6812
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6853
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7943
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7822
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8120
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.8002
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7925
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7752
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8128
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7988
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7788
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7760
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6792
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6834
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7708
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7528
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.7936
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7811
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7689
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7435
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.7940
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7753
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7557
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7524
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6666
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=10, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6715
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7909
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7716
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8112
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7954
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7894
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7631
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8103
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7915
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7739
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7675
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6713
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6768
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7899
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7707
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8082
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7936
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7869
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7637
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8078
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7898
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7716
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7661
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6729
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6772
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7838
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7691
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8052
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7903
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7824
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7593
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.8045
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7874
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7668
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7631
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6725
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6771
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7708
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7528
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.7936
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7811
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7689
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7435
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.7940
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7753
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.7557
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7524
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.6666
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=15, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6715
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5969
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7107
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5952
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7091
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5827
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7010
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5831
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7027
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5524
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.6993
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.4721
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6010
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5942
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7095
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5972
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7074
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5809
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7003
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5836
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7024
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5520
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.6993
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.4719
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6011
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5938
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7064
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5948
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7093
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5802
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.6978
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5840
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7013
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5516
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.6978
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.4713
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6010
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5897
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.6984
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5941
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7044
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5779
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.6877
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5806
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.6979
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5487
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=None, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.6933
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.4707
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=None, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.5988
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5947
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7103
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5983
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7085
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=gini
+Mean Fold Accuracy: 0.5838
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=entropy
+Mean Fold Accuracy: 0.7017
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=gini
+Mean Fold Accuracy: 0.5873
+--------------------------------------------------------------------------------
+Parameters: n_estimators=50, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=entropy
+Mean Fold Accuracy: 0.7023
+--------------------------------------------------------------------------------

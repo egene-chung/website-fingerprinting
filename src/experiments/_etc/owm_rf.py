@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import numpy as np
 
 # 데이터 로드
-cw_path = 'data/csv/closedworld_data.csv'
+cw_path = '../../data/csv/openworld_multi_data.csv'
 df = pd.read_csv(cw_path)
 
 # Feature와 Label 정의
@@ -23,12 +23,15 @@ skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
 # 확장된 하이퍼파라미터 조합
 param_grid = {
-    'n_estimators': [100, 200],
-    'max_depth': [None, 10, 30],
-    'min_samples_split': [2, 5],
+    'n_estimators': [50, 100, 200, 300],
+    'max_depth': [None, 10, 20, 30, 40],
+    'min_samples_split': [2, 5, 10, 15],
     'min_samples_leaf': [1, 2, 4, 8],
-    'max_features': ['sqrt', 'log2'],
+    'max_features': ['sqrt', 'log2', None],
+    'bootstrap': [True, False],
+    'criterion': ['gini', 'entropy']
 }
+
 # 모든 파라미터 조합 생성
 param_combinations = list(product(
     param_grid['n_estimators'],
@@ -36,10 +39,12 @@ param_combinations = list(product(
     param_grid['min_samples_split'],
     param_grid['min_samples_leaf'],
     param_grid['max_features'],
+    param_grid['bootstrap'],
+    param_grid['criterion']
 ))
 
 # 결과 기록 파일 초기화
-results_log = "cw_random_forest.txt"
+results_log = "owm_rf.txt"
 with open(results_log, "w") as log:
     log.write("Stratified K-Fold Performance (No Feature Importance)\n")
     log.write("=" * 80 + "\n")
@@ -47,7 +52,7 @@ with open(results_log, "w") as log:
 
 # 모든 파라미터 조합에 대해 실행
 for params in param_combinations:
-    n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features = params
+    n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features, bootstrap, criterion = params
     
     # 결과 저장
     fold_accuracies = []
@@ -64,6 +69,8 @@ for params in param_combinations:
             min_samples_split=min_samples_split,
             min_samples_leaf=min_samples_leaf,
             max_features=max_features,
+            bootstrap=bootstrap,
+            criterion=criterion,
             random_state=42  # 재현 가능성을 위해 고정
         )
 
@@ -83,7 +90,7 @@ for params in param_combinations:
     with open(results_log, "a") as log:
         log.write(f"Parameters: n_estimators={n_estimators}, max_depth={max_depth}, "
                   f"min_samples_split={min_samples_split}, min_samples_leaf={min_samples_leaf}, "
-                  f"max_features={max_features}\n")
+                  f"max_features={max_features}, bootstrap={bootstrap}, criterion={criterion}\n")
         log.write(f"Mean Fold Accuracy: {mean_accuracy:.4f}\n")
         log.write("-" * 80 + "\n")
 

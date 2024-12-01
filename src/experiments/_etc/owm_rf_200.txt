@@ -1,0 +1,147 @@
+Stratified K-Fold Performance (No Feature Importance)
+================================================================================
+
+Parameters: n_estimators=200, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=sqrt
+Mean Fold Accuracy: 0.8293
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=log2
+Mean Fold Accuracy: 0.8292
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=sqrt
+Mean Fold Accuracy: 0.8210
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=2, min_samples_leaf=2, max_features=log2
+Mean Fold Accuracy: 0.8206
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=sqrt
+Mean Fold Accuracy: 0.8065
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=2, min_samples_leaf=4, max_features=log2
+Mean Fold Accuracy: 0.8032
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=sqrt
+Mean Fold Accuracy: 0.7755
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=2, min_samples_leaf=8, max_features=log2
+Mean Fold Accuracy: 0.7729
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=sqrt
+Mean Fold Accuracy: 0.8233
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=5, min_samples_leaf=1, max_features=log2
+Mean Fold Accuracy: 0.8229
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=sqrt
+Mean Fold Accuracy: 0.8198
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=5, min_samples_leaf=2, max_features=log2
+Mean Fold Accuracy: 0.8186
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=sqrt
+Mean Fold Accuracy: 0.8065
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=5, min_samples_leaf=4, max_features=log2
+Mean Fold Accuracy: 0.8032
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=sqrt
+Mean Fold Accuracy: 0.7755
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=None, min_samples_split=5, min_samples_leaf=8, max_features=log2
+Mean Fold Accuracy: 0.7729
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=sqrt
+Mean Fold Accuracy: 0.6003
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=2, min_samples_leaf=1, max_features=log2
+Mean Fold Accuracy: 0.5880
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=sqrt
+Mean Fold Accuracy: 0.5992
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=2, min_samples_leaf=2, max_features=log2
+Mean Fold Accuracy: 0.5851
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=sqrt
+Mean Fold Accuracy: 0.5973
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=2, min_samples_leaf=4, max_features=log2
+Mean Fold Accuracy: 0.5853
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=sqrt
+Mean Fold Accuracy: 0.5928
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=2, min_samples_leaf=8, max_features=log2
+Mean Fold Accuracy: 0.5814
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=sqrt
+Mean Fold Accuracy: 0.5988
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=5, min_samples_leaf=1, max_features=log2
+Mean Fold Accuracy: 0.5878
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=5, min_samples_leaf=2, max_features=sqrt
+Mean Fold Accuracy: 0.5977
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=5, min_samples_leaf=2, max_features=log2
+Mean Fold Accuracy: 0.5853
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=5, min_samples_leaf=4, max_features=sqrt
+Mean Fold Accuracy: 0.5973
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=5, min_samples_leaf=4, max_features=log2
+Mean Fold Accuracy: 0.5853
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=5, min_samples_leaf=8, max_features=sqrt
+Mean Fold Accuracy: 0.5928
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=10, min_samples_split=5, min_samples_leaf=8, max_features=log2
+Mean Fold Accuracy: 0.5814
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=1, max_features=sqrt
+Mean Fold Accuracy: 0.8294
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=1, max_features=log2
+Mean Fold Accuracy: 0.8304
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=2, max_features=sqrt
+Mean Fold Accuracy: 0.8216
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=2, max_features=log2
+Mean Fold Accuracy: 0.8199
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=4, max_features=sqrt
+Mean Fold Accuracy: 0.8063
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=4, max_features=log2
+Mean Fold Accuracy: 0.8032
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=8, max_features=sqrt
+Mean Fold Accuracy: 0.7754
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=8, max_features=log2
+Mean Fold Accuracy: 0.7729
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=5, min_samples_leaf=1, max_features=sqrt
+Mean Fold Accuracy: 0.8234
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=5, min_samples_leaf=1, max_features=log2
+Mean Fold Accuracy: 0.8225
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=5, min_samples_leaf=2, max_features=sqrt
+Mean Fold Accuracy: 0.8200
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=5, min_samples_leaf=2, max_features=log2
+Mean Fold Accuracy: 0.8189
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=5, min_samples_leaf=4, max_features=sqrt
+Mean Fold Accuracy: 0.8063
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=5, min_samples_leaf=4, max_features=log2
+Mean Fold Accuracy: 0.8032
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=5, min_samples_leaf=8, max_features=sqrt
+Mean Fold Accuracy: 0.7754
+--------------------------------------------------------------------------------
+Parameters: n_estimators=200, max_depth=30, min_samples_split=5, min_samples_leaf=8, max_features=log2
+Mean Fold Accuracy: 0.7729
+--------------------------------------------------------------------------------
