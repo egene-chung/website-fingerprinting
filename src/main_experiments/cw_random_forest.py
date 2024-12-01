@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import numpy as np
 
 # 데이터 로드
-cw_path = 'data/csv/openworld_binary_data.csv'
+cw_path = '../data/csv/closedworld_data.csv'
 df = pd.read_csv(cw_path)
 
 # Feature와 Label 정의
@@ -29,7 +29,6 @@ param_grid = {
     'min_samples_leaf': [1, 2, 4, 8],
     'max_features': ['sqrt', 'log2'],
 }
-
 # 모든 파라미터 조합 생성
 param_combinations = list(product(
     param_grid['n_estimators'],
@@ -40,7 +39,7 @@ param_combinations = list(product(
 ))
 
 # 결과 기록 파일 초기화
-results_log = "ow_binary_random_forest.txt"
+results_log = "cw_random_forest.txt"
 with open(results_log, "w") as log:
     log.write("Stratified K-Fold Performance (No Feature Importance)\n")
     log.write("=" * 80 + "\n")

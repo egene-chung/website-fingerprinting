@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, classification_report
 import numpy as np
 
 # 데이터 로드
-cw_path = 'data/csv/openworld_multi_data.csv'
+cw_path = '../data/csv/openworld_multi_data.csv'
 df = pd.read_csv(cw_path)
 
 # Feature와 Label 정의
