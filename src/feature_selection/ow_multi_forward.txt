@@ -1,0 +1,60 @@
+Forward Elimination Results (Using Feature Importance)
+================================================================================
+
+Selected Feature: num_outgoing_last_thirty
+Current Features: ['num_outgoing_last_thirty']
+Accuracy: 0.3453
+--------------------------------------------------
+Selected Feature: num_outgoing_thirty
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty']
+Accuracy: 0.3562
+--------------------------------------------------
+Selected Feature: sum_incoming_outgoing_total
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total']
+Accuracy: 0.4457
+--------------------------------------------------
+Selected Feature: avg_total
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total']
+Accuracy: 0.6584
+--------------------------------------------------
+Selected Feature: avg_total_burst
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst']
+Accuracy: 0.7166
+--------------------------------------------------
+Selected Feature: std_dev_interval
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst', 'std_dev_interval']
+Accuracy: 0.7509
+--------------------------------------------------
+Selected Feature: sum_incoming_outgoing_total_cum_diff
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst', 'std_dev_interval', 'sum_incoming_outgoing_total_cum_diff']
+Accuracy: 0.7824
+--------------------------------------------------
+Selected Feature: avg_cum_incoming
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst', 'std_dev_interval', 'sum_incoming_outgoing_total_cum_diff', 'avg_cum_incoming']
+Accuracy: 0.8047
+--------------------------------------------------
+Selected Feature: std_total_cum
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst', 'std_dev_interval', 'sum_incoming_outgoing_total_cum_diff', 'avg_cum_incoming', 'std_total_cum']
+Accuracy: 0.8148
+--------------------------------------------------
+Selected Feature: std_outgoing_burst
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst', 'std_dev_interval', 'sum_incoming_outgoing_total_cum_diff', 'avg_cum_incoming', 'std_total_cum', 'std_outgoing_burst']
+Accuracy: 0.8226
+--------------------------------------------------
+Selected Feature: std_timestamps
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst', 'std_dev_interval', 'sum_incoming_outgoing_total_cum_diff', 'avg_cum_incoming', 'std_total_cum', 'std_outgoing_burst', 'std_timestamps']
+Accuracy: 0.8286
+--------------------------------------------------
+Selected Feature: num_outgoing
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst', 'std_dev_interval', 'sum_incoming_outgoing_total_cum_diff', 'avg_cum_incoming', 'std_total_cum', 'std_outgoing_burst', 'std_timestamps', 'num_outgoing']
+Accuracy: 0.8331
+--------------------------------------------------
+Selected Feature: num_incoming_thirty_burst
+Current Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst', 'std_dev_interval', 'sum_incoming_outgoing_total_cum_diff', 'avg_cum_incoming', 'std_total_cum', 'std_outgoing_burst', 'std_timestamps', 'num_outgoing', 'num_incoming_thirty_burst']
+Accuracy: 0.8378
+--------------------------------------------------
+================================================================================
+Final Selected Features and Performance
+Selected Features: ['num_outgoing_last_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total', 'avg_total', 'avg_total_burst', 'std_dev_interval', 'sum_incoming_outgoing_total_cum_diff', 'avg_cum_incoming', 'std_total_cum', 'std_outgoing_burst', 'std_timestamps', 'num_outgoing', 'num_incoming_thirty_burst']
+Best Accuracy: 0.8378
+================================================================================

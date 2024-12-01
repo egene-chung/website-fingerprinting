@@ -1,0 +1,61 @@
+Backward Elimination Results
+================================================================================
+Accuracy Before Feature Selection: 0.9226
+================================================================================
+
+Step 1: Removed Feature: avg_incoming
+Remaining Features: 54
+Accuracy: 0.9243
+================================================================================
+
+Step 2: Removed Feature: avg_outgoing
+Remaining Features: 53
+Accuracy: 0.9238
+================================================================================
+
+Step 3: Removed Feature: min_interval
+Remaining Features: 52
+Accuracy: 0.9226
+================================================================================
+
+Step 4: Removed Feature: num_incoming_last_thirty_cum
+Remaining Features: 51
+Accuracy: 0.9236
+================================================================================
+
+Step 5: Removed Feature: num_outgoing_last_thirty_cum
+Remaining Features: 50
+Accuracy: 0.9226
+================================================================================
+
+Step 6: Removed Feature: num_incoming_thirty_burst
+Remaining Features: 49
+Accuracy: 0.9222
+================================================================================
+
+Step 7: Removed Feature: num_outgoing_last_thirty_burst
+Remaining Features: 48
+Accuracy: 0.9229
+================================================================================
+
+Step 8: Removed Feature: num_incoming_last_thirty_burst
+Remaining Features: 47
+Accuracy: 0.9222
+================================================================================
+
+Step 9: Removed Feature: num_outgoing_thirty_burst
+Remaining Features: 46
+Accuracy: 0.9233
+================================================================================
+
+Step 10: Removed Feature: num_incoming_last_thirty
+Remaining Features: 45
+Accuracy: 0.9207
+================================================================================
+
+Final Results
+================================================================================
+Best Accuracy: 0.9243
+Accuracy Before Feature Selection: 0.9226
+Final Selected Features: ['avg_outgoing', 'min_interval', 'num_incoming_last_thirty_cum', 'num_outgoing_last_thirty_cum', 'num_incoming_thirty_burst', 'num_outgoing_last_thirty_burst', 'num_incoming_last_thirty_burst', 'num_outgoing_thirty_burst', 'num_incoming_last_thirty', 'num_outgoing_last_thirty', 'fraction_outgoing_burst', 'num_total_cum', 'sum_incoming_outgoing_total_cum', 'num_incoming_burst', 'fraction_incoming_burst', 'sum_incoming_outgoing_total_burst_diff', 'sum_incoming_outgoing_total_burst', 'num_total_burst', 'num_outgoing_burst', 'num_total', 'num_incoming_cum', 'sum_incoming_outgoing_total', 'num_incoming', 'num_outgoing', 'std_outgoing_cum', 'avg_cum_incoming', 'fraction_incoming', 'fraction_incoming_burst_incoming_diff', 'avg_total_cum', 'fraction_outgoing', 'fraction_outgoing_burst_outgoing_diff', 'std_incoming_cum', 'std_total_cum', 'avg_total', 'std_total_burst', 'std_total', 'std_incoming_burst', 'mean_interval', 'std_dev_interval', 'range_interval', 'max_interval', 'avg_burst_incoming', 'std_timestamps', 'avg_total_burst', 'avg_timestamps', 'num_outgoing_thirty_cum', 'std_outgoing_burst', 'max_timestamps', 'avg_burst_outgoing', 'num_outgoing_cum', 'num_incoming_thirty', 'num_outgoing_thirty', 'num_incoming_thirty_cum', 'sum_incoming_outgoing_total_cum_diff']
+================================================================================

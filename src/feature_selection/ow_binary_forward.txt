@@ -1,0 +1,32 @@
+Forward Elimination Results (Using Feature Importance)
+================================================================================
+
+Selected Feature: sum_incoming_outgoing_total_cum_diff
+Current Features: ['sum_incoming_outgoing_total_cum_diff']
+Accuracy: 0.8800
+--------------------------------------------------
+Selected Feature: num_outgoing_thirty
+Current Features: ['sum_incoming_outgoing_total_cum_diff', 'num_outgoing_thirty']
+Accuracy: 0.8834
+--------------------------------------------------
+Selected Feature: num_incoming_thirty_cum
+Current Features: ['sum_incoming_outgoing_total_cum_diff', 'num_outgoing_thirty', 'num_incoming_thirty_cum']
+Accuracy: 0.8841
+--------------------------------------------------
+Selected Feature: num_outgoing_last_thirty
+Current Features: ['sum_incoming_outgoing_total_cum_diff', 'num_outgoing_thirty', 'num_incoming_thirty_cum', 'num_outgoing_last_thirty']
+Accuracy: 0.8843
+--------------------------------------------------
+Selected Feature: num_outgoing_thirty_burst
+Current Features: ['sum_incoming_outgoing_total_cum_diff', 'num_outgoing_thirty', 'num_incoming_thirty_cum', 'num_outgoing_last_thirty', 'num_outgoing_thirty_burst']
+Accuracy: 0.8847
+--------------------------------------------------
+Selected Feature: avg_outgoing
+Current Features: ['sum_incoming_outgoing_total_cum_diff', 'num_outgoing_thirty', 'num_incoming_thirty_cum', 'num_outgoing_last_thirty', 'num_outgoing_thirty_burst', 'avg_outgoing']
+Accuracy: 0.8852
+--------------------------------------------------
+================================================================================
+Final Selected Features and Performance
+Selected Features: ['sum_incoming_outgoing_total_cum_diff', 'num_outgoing_thirty', 'num_incoming_thirty_cum', 'num_outgoing_last_thirty', 'num_outgoing_thirty_burst', 'avg_outgoing']
+Best Accuracy: 0.8852
+================================================================================
