@@ -1,2 +1,0 @@
-Open World Binary - Random Forest Experiment Results (SMOTE Applied)
-==================================================

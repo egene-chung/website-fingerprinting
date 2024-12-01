@@ -1,0 +1,655 @@
+Detailed Feature Importance and Threshold Performance
+================================================================================
+
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=gini
+Feature Importance:
+std_outgoing_burst                        0.035502
+num_outgoing_thirty                       0.030625
+range_interval                            0.029848
+std_total_cum                             0.029364
+num_outgoing                              0.029178
+std_incoming_cum                          0.029006
+max_interval                              0.028892
+avg_cum_incoming                          0.028449
+avg_burst_outgoing                        0.028010
+avg_total_cum                             0.027302
+std_dev_interval                          0.027181
+max_timestamps                            0.027014
+num_incoming_thirty                       0.026688
+avg_total_burst                           0.026005
+num_total_cum                             0.025412
+avg_burst_incoming                        0.025174
+fraction_incoming_burst_incoming_diff     0.025021
+mean_interval                             0.024911
+num_incoming                              0.024875
+fraction_outgoing_burst_outgoing_diff     0.024556
+sum_incoming_outgoing_total               0.024290
+fraction_outgoing                         0.024276
+fraction_incoming                         0.024224
+std_total                                 0.024211
+num_incoming_cum                          0.023986
+sum_incoming_outgoing_total_cum           0.023794
+num_total                                 0.023791
+num_outgoing_last_thirty                  0.023665
+std_timestamps                            0.023169
+avg_total                                 0.022841
+num_incoming_last_thirty                  0.022738
+sum_incoming_outgoing_total_burst_diff    0.021639
+std_total_burst                           0.020613
+sum_incoming_outgoing_total_burst         0.019544
+num_total_burst                           0.019215
+num_outgoing_burst                        0.018546
+num_incoming_burst                        0.018104
+fraction_incoming_burst                   0.017672
+fraction_outgoing_burst                   0.017452
+std_incoming_burst                        0.015324
+avg_timestamps                            0.015066
+num_outgoing_cum                          0.000502
+num_outgoing_last_thirty_burst            0.000439
+sum_incoming_outgoing_total_cum_diff      0.000433
+std_outgoing_cum                          0.000433
+num_incoming_thirty_burst                 0.000328
+num_incoming_last_thirty_burst            0.000319
+num_outgoing_thirty_burst                 0.000313
+num_outgoing_thirty_cum                   0.000020
+num_incoming_thirty_cum                   0.000016
+num_outgoing_last_thirty_cum              0.000014
+num_incoming_last_thirty_cum              0.000010
+min_interval                              0.000000
+avg_outgoing                              0.000000
+avg_incoming                              0.000000
+================================================================================
+  Threshold: 0.01
+  Selected Features (41): ['std_outgoing_burst', 'num_outgoing_thirty', 'range_interval', 'std_total_cum', 'num_outgoing', 'std_incoming_cum', 'max_interval', 'avg_cum_incoming', 'avg_burst_outgoing', 'avg_total_cum', 'std_dev_interval', 'max_timestamps', 'num_incoming_thirty', 'avg_total_burst', 'num_total_cum', 'avg_burst_incoming', 'fraction_incoming_burst_incoming_diff', 'mean_interval', 'num_incoming', 'fraction_outgoing_burst_outgoing_diff', 'sum_incoming_outgoing_total', 'fraction_outgoing', 'fraction_incoming', 'std_total', 'num_incoming_cum', 'sum_incoming_outgoing_total_cum', 'num_total', 'num_outgoing_last_thirty', 'std_timestamps', 'avg_total', 'num_incoming_last_thirty', 'sum_incoming_outgoing_total_burst_diff', 'std_total_burst', 'sum_incoming_outgoing_total_burst', 'num_total_burst', 'num_outgoing_burst', 'num_incoming_burst', 'fraction_incoming_burst', 'fraction_outgoing_burst', 'std_incoming_burst', 'avg_timestamps']
+  Accuracy: 0.8074
+--------------------------------------------------
+  Threshold: 0.02
+  Selected Features (33): ['std_outgoing_burst', 'num_outgoing_thirty', 'range_interval', 'std_total_cum', 'num_outgoing', 'std_incoming_cum', 'max_interval', 'avg_cum_incoming', 'avg_burst_outgoing', 'avg_total_cum', 'std_dev_interval', 'max_timestamps', 'num_incoming_thirty', 'avg_total_burst', 'num_total_cum', 'avg_burst_incoming', 'fraction_incoming_burst_incoming_diff', 'mean_interval', 'num_incoming', 'fraction_outgoing_burst_outgoing_diff', 'sum_incoming_outgoing_total', 'fraction_outgoing', 'fraction_incoming', 'std_total', 'num_incoming_cum', 'sum_incoming_outgoing_total_cum', 'num_total', 'num_outgoing_last_thirty', 'std_timestamps', 'avg_total', 'num_incoming_last_thirty', 'sum_incoming_outgoing_total_burst_diff', 'std_total_burst']
+  Accuracy: 0.8068
+--------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=True, criterion=entropy
+Feature Importance:
+num_incoming_thirty                       4.310827e-02
+num_outgoing_thirty                       3.791184e-02
+num_outgoing                              3.739152e-02
+sum_incoming_outgoing_total               3.576598e-02
+sum_incoming_outgoing_total_cum           3.245173e-02
+num_incoming_cum                          3.203990e-02
+fraction_incoming                         3.147847e-02
+num_total_cum                             3.063927e-02
+fraction_incoming_burst_incoming_diff     3.020591e-02
+avg_total_cum                             3.009730e-02
+fraction_outgoing_burst_outgoing_diff     2.991250e-02
+std_incoming_cum                          2.926139e-02
+std_total                                 2.911662e-02
+avg_total                                 2.851165e-02
+avg_total_burst                           2.850748e-02
+avg_cum_incoming                          2.787696e-02
+avg_burst_incoming                        2.786314e-02
+num_total                                 2.675921e-02
+fraction_outgoing                         2.661991e-02
+std_total_cum                             2.591203e-02
+sum_incoming_outgoing_total_burst_diff    2.584288e-02
+std_dev_interval                          2.378076e-02
+max_timestamps                            2.369704e-02
+std_outgoing_burst                        2.367198e-02
+num_outgoing_burst                        2.258550e-02
+num_incoming                              2.235452e-02
+sum_incoming_outgoing_total_burst         2.211830e-02
+max_interval                              2.193573e-02
+range_interval                            2.170789e-02
+avg_burst_outgoing                        2.118223e-02
+mean_interval                             1.876243e-02
+num_total_burst                           1.818027e-02
+num_incoming_burst                        1.759440e-02
+num_incoming_last_thirty                  1.674576e-02
+num_outgoing_last_thirty                  1.539739e-02
+std_total_burst                           1.307041e-02
+std_timestamps                            1.210771e-02
+fraction_outgoing_burst                   1.116932e-02
+fraction_incoming_burst                   1.111671e-02
+std_incoming_burst                        7.440343e-03
+avg_timestamps                            7.063640e-03
+num_outgoing_thirty_burst                 3.006027e-04
+num_outgoing_last_thirty_burst            2.085962e-04
+num_incoming_thirty_burst                 1.887822e-04
+num_incoming_last_thirty_burst            1.827929e-04
+num_outgoing_cum                          5.532171e-05
+sum_incoming_outgoing_total_cum_diff      5.528045e-05
+std_outgoing_cum                          4.531290e-05
+num_outgoing_last_thirty_cum              2.727319e-06
+num_incoming_last_thirty_cum              2.004025e-06
+num_outgoing_thirty_cum                   1.382048e-06
+num_incoming_thirty_cum                   9.077824e-07
+avg_outgoing                              0.000000e+00
+min_interval                              0.000000e+00
+avg_incoming                              0.000000e+00
+================================================================================
+  Threshold: 0.01
+  Selected Features (39): ['num_incoming_thirty', 'num_outgoing_thirty', 'num_outgoing', 'sum_incoming_outgoing_total', 'sum_incoming_outgoing_total_cum', 'num_incoming_cum', 'fraction_incoming', 'num_total_cum', 'fraction_incoming_burst_incoming_diff', 'avg_total_cum', 'fraction_outgoing_burst_outgoing_diff', 'std_incoming_cum', 'std_total', 'avg_total', 'avg_total_burst', 'avg_cum_incoming', 'avg_burst_incoming', 'num_total', 'fraction_outgoing', 'std_total_cum', 'sum_incoming_outgoing_total_burst_diff', 'std_dev_interval', 'max_timestamps', 'std_outgoing_burst', 'num_outgoing_burst', 'num_incoming', 'sum_incoming_outgoing_total_burst', 'max_interval', 'range_interval', 'avg_burst_outgoing', 'mean_interval', 'num_total_burst', 'num_incoming_burst', 'num_incoming_last_thirty', 'num_outgoing_last_thirty', 'std_total_burst', 'std_timestamps', 'fraction_outgoing_burst', 'fraction_incoming_burst']
+  Accuracy: 0.8000
+--------------------------------------------------
+  Threshold: 0.02
+  Selected Features (30): ['num_incoming_thirty', 'num_outgoing_thirty', 'num_outgoing', 'sum_incoming_outgoing_total', 'sum_incoming_outgoing_total_cum', 'num_incoming_cum', 'fraction_incoming', 'num_total_cum', 'fraction_incoming_burst_incoming_diff', 'avg_total_cum', 'fraction_outgoing_burst_outgoing_diff', 'std_incoming_cum', 'std_total', 'avg_total', 'avg_total_burst', 'avg_cum_incoming', 'avg_burst_incoming', 'num_total', 'fraction_outgoing', 'std_total_cum', 'sum_incoming_outgoing_total_burst_diff', 'std_dev_interval', 'max_timestamps', 'std_outgoing_burst', 'num_outgoing_burst', 'num_incoming', 'sum_incoming_outgoing_total_burst', 'max_interval', 'range_interval', 'avg_burst_outgoing']
+  Accuracy: 0.7818
+--------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=gini
+Feature Importance:
+std_outgoing_burst                        0.034440
+std_incoming_cum                          0.032644
+std_total_cum                             0.032428
+num_outgoing                              0.030642
+num_outgoing_thirty                       0.030487
+num_incoming_thirty                       0.029114
+std_dev_interval                          0.028725
+avg_cum_incoming                          0.028110
+max_timestamps                            0.028101
+avg_total_cum                             0.028020
+max_interval                              0.027991
+range_interval                            0.027223
+avg_burst_outgoing                        0.025746
+sum_incoming_outgoing_total               0.025552
+avg_total_burst                           0.025247
+avg_total                                 0.025064
+avg_burst_incoming                        0.025020
+sum_incoming_outgoing_total_cum           0.024933
+fraction_outgoing                         0.024577
+num_total_cum                             0.024404
+num_incoming_cum                          0.024270
+num_total                                 0.024208
+std_total                                 0.024168
+mean_interval                             0.024158
+num_incoming_last_thirty                  0.024142
+fraction_incoming_burst_incoming_diff     0.023614
+num_incoming                              0.023583
+std_timestamps                            0.022792
+fraction_outgoing_burst_outgoing_diff     0.022737
+fraction_incoming                         0.022672
+sum_incoming_outgoing_total_burst_diff    0.022512
+num_outgoing_last_thirty                  0.022419
+num_total_burst                           0.019877
+std_total_burst                           0.019277
+sum_incoming_outgoing_total_burst         0.019094
+num_incoming_burst                        0.018310
+num_outgoing_burst                        0.018052
+fraction_incoming_burst                   0.017493
+fraction_outgoing_burst                   0.016978
+avg_timestamps                            0.014383
+std_incoming_burst                        0.013985
+num_outgoing_cum                          0.000556
+sum_incoming_outgoing_total_cum_diff      0.000519
+num_outgoing_thirty_burst                 0.000475
+std_outgoing_cum                          0.000379
+num_outgoing_last_thirty_burst            0.000312
+num_incoming_thirty_burst                 0.000288
+num_incoming_last_thirty_burst            0.000241
+num_incoming_last_thirty_cum              0.000016
+num_outgoing_thirty_cum                   0.000010
+num_incoming_thirty_cum                   0.000010
+num_outgoing_last_thirty_cum              0.000004
+avg_outgoing                              0.000000
+min_interval                              0.000000
+avg_incoming                              0.000000
+================================================================================
+  Threshold: 0.01
+  Selected Features (41): ['std_outgoing_burst', 'std_incoming_cum', 'std_total_cum', 'num_outgoing', 'num_outgoing_thirty', 'num_incoming_thirty', 'std_dev_interval', 'avg_cum_incoming', 'max_timestamps', 'avg_total_cum', 'max_interval', 'range_interval', 'avg_burst_outgoing', 'sum_incoming_outgoing_total', 'avg_total_burst', 'avg_total', 'avg_burst_incoming', 'sum_incoming_outgoing_total_cum', 'fraction_outgoing', 'num_total_cum', 'num_incoming_cum', 'num_total', 'std_total', 'mean_interval', 'num_incoming_last_thirty', 'fraction_incoming_burst_incoming_diff', 'num_incoming', 'std_timestamps', 'fraction_outgoing_burst_outgoing_diff', 'fraction_incoming', 'sum_incoming_outgoing_total_burst_diff', 'num_outgoing_last_thirty', 'num_total_burst', 'std_total_burst', 'sum_incoming_outgoing_total_burst', 'num_incoming_burst', 'num_outgoing_burst', 'fraction_incoming_burst', 'fraction_outgoing_burst', 'avg_timestamps', 'std_incoming_burst']
+  Accuracy: 0.8142
+--------------------------------------------------
+  Threshold: 0.02
+  Selected Features (32): ['std_outgoing_burst', 'std_incoming_cum', 'std_total_cum', 'num_outgoing', 'num_outgoing_thirty', 'num_incoming_thirty', 'std_dev_interval', 'avg_cum_incoming', 'max_timestamps', 'avg_total_cum', 'max_interval', 'range_interval', 'avg_burst_outgoing', 'sum_incoming_outgoing_total', 'avg_total_burst', 'avg_total', 'avg_burst_incoming', 'sum_incoming_outgoing_total_cum', 'fraction_outgoing', 'num_total_cum', 'num_incoming_cum', 'num_total', 'std_total', 'mean_interval', 'num_incoming_last_thirty', 'fraction_incoming_burst_incoming_diff', 'num_incoming', 'std_timestamps', 'fraction_outgoing_burst_outgoing_diff', 'fraction_incoming', 'sum_incoming_outgoing_total_burst_diff', 'num_outgoing_last_thirty']
+  Accuracy: 0.8118
+--------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=sqrt, bootstrap=False, criterion=entropy
+Feature Importance:
+num_incoming_thirty                       4.153697e-02
+num_outgoing_thirty                       4.103016e-02
+num_outgoing                              3.501718e-02
+std_incoming_cum                          3.469101e-02
+sum_incoming_outgoing_total               3.414357e-02
+fraction_outgoing                         3.343518e-02
+sum_incoming_outgoing_total_cum           3.258183e-02
+num_incoming_cum                          3.094194e-02
+std_total_cum                             3.065845e-02
+fraction_incoming                         2.953693e-02
+num_total_cum                             2.914030e-02
+std_total                                 2.912525e-02
+avg_total_burst                           2.880206e-02
+avg_cum_incoming                          2.809226e-02
+fraction_incoming_burst_incoming_diff     2.805541e-02
+avg_total_cum                             2.789906e-02
+avg_total                                 2.684764e-02
+num_total                                 2.680129e-02
+sum_incoming_outgoing_total_burst_diff    2.647512e-02
+sum_incoming_outgoing_total_burst         2.615273e-02
+avg_burst_incoming                        2.523881e-02
+fraction_outgoing_burst_outgoing_diff     2.499991e-02
+max_timestamps                            2.486238e-02
+std_dev_interval                          2.471634e-02
+avg_burst_outgoing                        2.301721e-02
+num_incoming                              2.290866e-02
+max_interval                              2.229411e-02
+std_outgoing_burst                        2.209127e-02
+range_interval                            2.143439e-02
+num_outgoing_burst                        2.134023e-02
+num_incoming_burst                        1.887845e-02
+mean_interval                             1.763210e-02
+num_incoming_last_thirty                  1.646761e-02
+num_outgoing_last_thirty                  1.614828e-02
+num_total_burst                           1.577374e-02
+std_total_burst                           1.268044e-02
+std_timestamps                            1.217973e-02
+fraction_incoming_burst                   1.070952e-02
+fraction_outgoing_burst                   1.056135e-02
+avg_timestamps                            7.119482e-03
+std_incoming_burst                        6.971245e-03
+num_outgoing_thirty_burst                 2.552070e-04
+num_outgoing_last_thirty_burst            2.429243e-04
+num_incoming_thirty_burst                 1.417314e-04
+num_incoming_last_thirty_burst            1.249812e-04
+num_outgoing_cum                          8.695283e-05
+sum_incoming_outgoing_total_cum_diff      7.939505e-05
+std_outgoing_cum                          6.868714e-05
+num_outgoing_thirty_cum                   4.135384e-06
+num_outgoing_last_thirty_cum              3.408621e-06
+num_incoming_last_thirty_cum              2.002768e-06
+num_incoming_thirty_cum                   9.522935e-07
+avg_outgoing                              0.000000e+00
+min_interval                              0.000000e+00
+avg_incoming                              0.000000e+00
+================================================================================
+  Threshold: 0.01
+  Selected Features (39): ['num_incoming_thirty', 'num_outgoing_thirty', 'num_outgoing', 'std_incoming_cum', 'sum_incoming_outgoing_total', 'fraction_outgoing', 'sum_incoming_outgoing_total_cum', 'num_incoming_cum', 'std_total_cum', 'fraction_incoming', 'num_total_cum', 'std_total', 'avg_total_burst', 'avg_cum_incoming', 'fraction_incoming_burst_incoming_diff', 'avg_total_cum', 'avg_total', 'num_total', 'sum_incoming_outgoing_total_burst_diff', 'sum_incoming_outgoing_total_burst', 'avg_burst_incoming', 'fraction_outgoing_burst_outgoing_diff', 'max_timestamps', 'std_dev_interval', 'avg_burst_outgoing', 'num_incoming', 'max_interval', 'std_outgoing_burst', 'range_interval', 'num_outgoing_burst', 'num_incoming_burst', 'mean_interval', 'num_incoming_last_thirty', 'num_outgoing_last_thirty', 'num_total_burst', 'std_total_burst', 'std_timestamps', 'fraction_incoming_burst', 'fraction_outgoing_burst']
+  Accuracy: 0.8061
+--------------------------------------------------
+  Threshold: 0.02
+  Selected Features (30): ['num_incoming_thirty', 'num_outgoing_thirty', 'num_outgoing', 'std_incoming_cum', 'sum_incoming_outgoing_total', 'fraction_outgoing', 'sum_incoming_outgoing_total_cum', 'num_incoming_cum', 'std_total_cum', 'fraction_incoming', 'num_total_cum', 'std_total', 'avg_total_burst', 'avg_cum_incoming', 'fraction_incoming_burst_incoming_diff', 'avg_total_cum', 'avg_total', 'num_total', 'sum_incoming_outgoing_total_burst_diff', 'sum_incoming_outgoing_total_burst', 'avg_burst_incoming', 'fraction_outgoing_burst_outgoing_diff', 'max_timestamps', 'std_dev_interval', 'avg_burst_outgoing', 'num_incoming', 'max_interval', 'std_outgoing_burst', 'range_interval', 'num_outgoing_burst']
+  Accuracy: 0.7876
+--------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=gini
+Feature Importance:
+std_outgoing_burst                        0.031176
+std_total_cum                             0.030321
+std_incoming_cum                          0.029774
+avg_cum_incoming                          0.028457
+avg_total_cum                             0.028196
+num_outgoing                              0.028149
+std_dev_interval                          0.027899
+num_outgoing_thirty                       0.027358
+num_incoming_thirty                       0.027179
+avg_burst_outgoing                        0.026951
+range_interval                            0.026862
+max_interval                              0.026394
+max_timestamps                            0.026145
+sum_incoming_outgoing_total               0.025999
+sum_incoming_outgoing_total_cum           0.025946
+fraction_incoming                         0.025651
+avg_total                                 0.025606
+sum_incoming_outgoing_total_burst_diff    0.025466
+std_total                                 0.025243
+avg_total_burst                           0.025119
+num_incoming_cum                          0.025022
+num_total_cum                             0.024713
+num_total                                 0.024580
+fraction_incoming_burst_incoming_diff     0.024422
+fraction_outgoing_burst_outgoing_diff     0.024186
+avg_burst_incoming                        0.023845
+num_incoming                              0.023826
+fraction_outgoing                         0.023545
+mean_interval                             0.023227
+std_timestamps                            0.022649
+num_outgoing_last_thirty                  0.022469
+num_incoming_last_thirty                  0.022383
+num_total_burst                           0.020924
+sum_incoming_outgoing_total_burst         0.020586
+std_total_burst                           0.020521
+num_incoming_burst                        0.020148
+num_outgoing_burst                        0.019974
+fraction_incoming_burst                   0.018662
+fraction_outgoing_burst                   0.016792
+std_incoming_burst                        0.016406
+avg_timestamps                            0.014195
+num_outgoing_cum                          0.000559
+num_incoming_last_thirty_burst            0.000461
+std_outgoing_cum                          0.000438
+num_outgoing_last_thirty_burst            0.000436
+num_outgoing_thirty_burst                 0.000390
+sum_incoming_outgoing_total_cum_diff      0.000385
+num_incoming_thirty_burst                 0.000338
+num_incoming_last_thirty_cum              0.000012
+num_incoming_thirty_cum                   0.000007
+num_outgoing_last_thirty_cum              0.000006
+num_outgoing_thirty_cum                   0.000005
+avg_outgoing                              0.000000
+min_interval                              0.000000
+avg_incoming                              0.000000
+================================================================================
+  Threshold: 0.01
+  Selected Features (41): ['std_outgoing_burst', 'std_total_cum', 'std_incoming_cum', 'avg_cum_incoming', 'avg_total_cum', 'num_outgoing', 'std_dev_interval', 'num_outgoing_thirty', 'num_incoming_thirty', 'avg_burst_outgoing', 'range_interval', 'max_interval', 'max_timestamps', 'sum_incoming_outgoing_total', 'sum_incoming_outgoing_total_cum', 'fraction_incoming', 'avg_total', 'sum_incoming_outgoing_total_burst_diff', 'std_total', 'avg_total_burst', 'num_incoming_cum', 'num_total_cum', 'num_total', 'fraction_incoming_burst_incoming_diff', 'fraction_outgoing_burst_outgoing_diff', 'avg_burst_incoming', 'num_incoming', 'fraction_outgoing', 'mean_interval', 'std_timestamps', 'num_outgoing_last_thirty', 'num_incoming_last_thirty', 'num_total_burst', 'sum_incoming_outgoing_total_burst', 'std_total_burst', 'num_incoming_burst', 'num_outgoing_burst', 'fraction_incoming_burst', 'fraction_outgoing_burst', 'std_incoming_burst', 'avg_timestamps']
+  Accuracy: 0.8053
+--------------------------------------------------
+  Threshold: 0.02
+  Selected Features (36): ['std_outgoing_burst', 'std_total_cum', 'std_incoming_cum', 'avg_cum_incoming', 'avg_total_cum', 'num_outgoing', 'std_dev_interval', 'num_outgoing_thirty', 'num_incoming_thirty', 'avg_burst_outgoing', 'range_interval', 'max_interval', 'max_timestamps', 'sum_incoming_outgoing_total', 'sum_incoming_outgoing_total_cum', 'fraction_incoming', 'avg_total', 'sum_incoming_outgoing_total_burst_diff', 'std_total', 'avg_total_burst', 'num_incoming_cum', 'num_total_cum', 'num_total', 'fraction_incoming_burst_incoming_diff', 'fraction_outgoing_burst_outgoing_diff', 'avg_burst_incoming', 'num_incoming', 'fraction_outgoing', 'mean_interval', 'std_timestamps', 'num_outgoing_last_thirty', 'num_incoming_last_thirty', 'num_total_burst', 'sum_incoming_outgoing_total_burst', 'std_total_burst', 'num_incoming_burst']
+  Accuracy: 0.8061
+--------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=True, criterion=entropy
+Feature Importance:
+num_outgoing                              0.038145
+sum_incoming_outgoing_total               0.036843
+num_outgoing_thirty                       0.035828
+num_incoming_thirty                       0.033706
+avg_cum_incoming                          0.033665
+fraction_incoming_burst_incoming_diff     0.033551
+avg_total_cum                             0.032686
+std_total                                 0.031192
+num_total_cum                             0.030591
+std_total_cum                             0.030319
+sum_incoming_outgoing_total_cum           0.029809
+fraction_incoming                         0.028492
+fraction_outgoing_burst_outgoing_diff     0.028090
+num_incoming_cum                          0.027871
+avg_total                                 0.027681
+std_incoming_cum                          0.026916
+avg_total_burst                           0.026672
+fraction_outgoing                         0.026444
+num_incoming                              0.025367
+sum_incoming_outgoing_total_burst_diff    0.025085
+avg_burst_incoming                        0.024501
+num_total                                 0.024352
+max_timestamps                            0.023827
+sum_incoming_outgoing_total_burst         0.023807
+num_outgoing_burst                        0.023782
+range_interval                            0.023653
+avg_burst_outgoing                        0.023631
+std_outgoing_burst                        0.022001
+std_dev_interval                          0.021732
+num_incoming_burst                        0.021034
+mean_interval                             0.020460
+max_interval                              0.020062
+num_total_burst                           0.019914
+std_total_burst                           0.015530
+num_outgoing_last_thirty                  0.015197
+num_incoming_last_thirty                  0.014900
+fraction_incoming_burst                   0.013234
+fraction_outgoing_burst                   0.012716
+std_timestamps                            0.010808
+std_incoming_burst                        0.007516
+avg_timestamps                            0.007187
+num_outgoing_thirty_burst                 0.000322
+num_outgoing_last_thirty_burst            0.000219
+num_incoming_last_thirty_burst            0.000217
+num_incoming_thirty_burst                 0.000192
+std_outgoing_cum                          0.000093
+sum_incoming_outgoing_total_cum_diff      0.000087
+num_outgoing_cum                          0.000058
+num_outgoing_thirty_cum                   0.000004
+num_incoming_thirty_cum                   0.000002
+num_outgoing_last_thirty_cum              0.000002
+num_incoming_last_thirty_cum              0.000002
+min_interval                              0.000000
+avg_outgoing                              0.000000
+avg_incoming                              0.000000
+================================================================================
+  Threshold: 0.01
+  Selected Features (39): ['num_outgoing', 'sum_incoming_outgoing_total', 'num_outgoing_thirty', 'num_incoming_thirty', 'avg_cum_incoming', 'fraction_incoming_burst_incoming_diff', 'avg_total_cum', 'std_total', 'num_total_cum', 'std_total_cum', 'sum_incoming_outgoing_total_cum', 'fraction_incoming', 'fraction_outgoing_burst_outgoing_diff', 'num_incoming_cum', 'avg_total', 'std_incoming_cum', 'avg_total_burst', 'fraction_outgoing', 'num_incoming', 'sum_incoming_outgoing_total_burst_diff', 'avg_burst_incoming', 'num_total', 'max_timestamps', 'sum_incoming_outgoing_total_burst', 'num_outgoing_burst', 'range_interval', 'avg_burst_outgoing', 'std_outgoing_burst', 'std_dev_interval', 'num_incoming_burst', 'mean_interval', 'max_interval', 'num_total_burst', 'std_total_burst', 'num_outgoing_last_thirty', 'num_incoming_last_thirty', 'fraction_incoming_burst', 'fraction_outgoing_burst', 'std_timestamps']
+  Accuracy: 0.7971
+--------------------------------------------------
+  Threshold: 0.02
+  Selected Features (32): ['num_outgoing', 'sum_incoming_outgoing_total', 'num_outgoing_thirty', 'num_incoming_thirty', 'avg_cum_incoming', 'fraction_incoming_burst_incoming_diff', 'avg_total_cum', 'std_total', 'num_total_cum', 'std_total_cum', 'sum_incoming_outgoing_total_cum', 'fraction_incoming', 'fraction_outgoing_burst_outgoing_diff', 'num_incoming_cum', 'avg_total', 'std_incoming_cum', 'avg_total_burst', 'fraction_outgoing', 'num_incoming', 'sum_incoming_outgoing_total_burst_diff', 'avg_burst_incoming', 'num_total', 'max_timestamps', 'sum_incoming_outgoing_total_burst', 'num_outgoing_burst', 'range_interval', 'avg_burst_outgoing', 'std_outgoing_burst', 'std_dev_interval', 'num_incoming_burst', 'mean_interval', 'max_interval']
+  Accuracy: 0.7813
+--------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=gini
+Feature Importance:
+std_outgoing_burst                        0.032667
+std_incoming_cum                          0.030093
+avg_cum_incoming                          0.029714
+std_total_cum                             0.029666
+num_incoming_thirty                       0.029379
+num_outgoing                              0.028876
+avg_total_cum                             0.028870
+num_outgoing_thirty                       0.028056
+max_timestamps                            0.027040
+std_dev_interval                          0.026969
+range_interval                            0.026684
+sum_incoming_outgoing_total               0.026502
+max_interval                              0.026323
+num_incoming_cum                          0.026066
+num_total                                 0.026011
+avg_burst_outgoing                        0.025661
+avg_total_burst                           0.025586
+num_total_cum                             0.025203
+std_total                                 0.025125
+num_incoming                              0.025018
+fraction_incoming_burst_incoming_diff     0.024771
+fraction_outgoing                         0.024622
+fraction_incoming                         0.024616
+sum_incoming_outgoing_total_cum           0.024530
+avg_burst_incoming                        0.024327
+avg_total                                 0.024079
+fraction_outgoing_burst_outgoing_diff     0.023939
+mean_interval                             0.023684
+sum_incoming_outgoing_total_burst_diff    0.023670
+num_outgoing_last_thirty                  0.023064
+num_incoming_last_thirty                  0.021828
+sum_incoming_outgoing_total_burst         0.021530
+std_timestamps                            0.021090
+num_total_burst                           0.020567
+num_outgoing_burst                        0.019666
+std_total_burst                           0.019050
+num_incoming_burst                        0.018246
+fraction_incoming_burst                   0.017703
+fraction_outgoing_burst                   0.017554
+std_incoming_burst                        0.014838
+avg_timestamps                            0.014051
+sum_incoming_outgoing_total_cum_diff      0.000741
+num_outgoing_cum                          0.000473
+num_outgoing_thirty_burst                 0.000409
+std_outgoing_cum                          0.000397
+num_outgoing_last_thirty_burst            0.000372
+num_incoming_thirty_burst                 0.000319
+num_incoming_last_thirty_burst            0.000299
+num_outgoing_thirty_cum                   0.000024
+num_incoming_thirty_cum                   0.000015
+num_outgoing_last_thirty_cum              0.000009
+num_incoming_last_thirty_cum              0.000009
+min_interval                              0.000000
+avg_outgoing                              0.000000
+avg_incoming                              0.000000
+================================================================================
+  Threshold: 0.01
+  Selected Features (41): ['std_outgoing_burst', 'std_incoming_cum', 'avg_cum_incoming', 'std_total_cum', 'num_incoming_thirty', 'num_outgoing', 'avg_total_cum', 'num_outgoing_thirty', 'max_timestamps', 'std_dev_interval', 'range_interval', 'sum_incoming_outgoing_total', 'max_interval', 'num_incoming_cum', 'num_total', 'avg_burst_outgoing', 'avg_total_burst', 'num_total_cum', 'std_total', 'num_incoming', 'fraction_incoming_burst_incoming_diff', 'fraction_outgoing', 'fraction_incoming', 'sum_incoming_outgoing_total_cum', 'avg_burst_incoming', 'avg_total', 'fraction_outgoing_burst_outgoing_diff', 'mean_interval', 'sum_incoming_outgoing_total_burst_diff', 'num_outgoing_last_thirty', 'num_incoming_last_thirty', 'sum_incoming_outgoing_total_burst', 'std_timestamps', 'num_total_burst', 'num_outgoing_burst', 'std_total_burst', 'num_incoming_burst', 'fraction_incoming_burst', 'fraction_outgoing_burst', 'std_incoming_burst', 'avg_timestamps']
+  Accuracy: 0.8142
+--------------------------------------------------
+  Threshold: 0.02
+  Selected Features (34): ['std_outgoing_burst', 'std_incoming_cum', 'avg_cum_incoming', 'std_total_cum', 'num_incoming_thirty', 'num_outgoing', 'avg_total_cum', 'num_outgoing_thirty', 'max_timestamps', 'std_dev_interval', 'range_interval', 'sum_incoming_outgoing_total', 'max_interval', 'num_incoming_cum', 'num_total', 'avg_burst_outgoing', 'avg_total_burst', 'num_total_cum', 'std_total', 'num_incoming', 'fraction_incoming_burst_incoming_diff', 'fraction_outgoing', 'fraction_incoming', 'sum_incoming_outgoing_total_cum', 'avg_burst_incoming', 'avg_total', 'fraction_outgoing_burst_outgoing_diff', 'mean_interval', 'sum_incoming_outgoing_total_burst_diff', 'num_outgoing_last_thirty', 'num_incoming_last_thirty', 'sum_incoming_outgoing_total_burst', 'std_timestamps', 'num_total_burst']
+  Accuracy: 0.8089
+--------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=log2, bootstrap=False, criterion=entropy
+Feature Importance:
+sum_incoming_outgoing_total               4.238313e-02
+num_incoming_thirty                       3.677612e-02
+num_outgoing_thirty                       3.646339e-02
+num_outgoing                              3.507079e-02
+std_total                                 3.293117e-02
+std_total_cum                             3.224748e-02
+avg_total_cum                             3.106494e-02
+fraction_incoming_burst_incoming_diff     3.101609e-02
+num_total_cum                             2.983323e-02
+num_incoming_cum                          2.948576e-02
+avg_total                                 2.927220e-02
+avg_cum_incoming                          2.911293e-02
+sum_incoming_outgoing_total_cum           2.898840e-02
+num_total                                 2.846477e-02
+fraction_outgoing                         2.817261e-02
+std_incoming_cum                          2.692219e-02
+avg_total_burst                           2.642492e-02
+fraction_outgoing_burst_outgoing_diff     2.594396e-02
+avg_burst_outgoing                        2.574025e-02
+sum_incoming_outgoing_total_burst         2.538301e-02
+fraction_incoming                         2.529467e-02
+num_incoming                              2.523021e-02
+sum_incoming_outgoing_total_burst_diff    2.518447e-02
+max_timestamps                            2.419083e-02
+avg_burst_incoming                        2.396648e-02
+num_outgoing_burst                        2.237745e-02
+num_total_burst                           2.194132e-02
+std_dev_interval                          2.190502e-02
+std_outgoing_burst                        2.155962e-02
+range_interval                            2.110610e-02
+max_interval                              2.033504e-02
+mean_interval                             2.021498e-02
+num_incoming_burst                        1.825776e-02
+num_incoming_last_thirty                  1.585223e-02
+std_total_burst                           1.513789e-02
+num_outgoing_last_thirty                  1.483056e-02
+fraction_incoming_burst                   1.217144e-02
+fraction_outgoing_burst                   1.162525e-02
+std_timestamps                            1.123723e-02
+std_incoming_burst                        7.571312e-03
+avg_timestamps                            6.877897e-03
+num_outgoing_thirty_burst                 5.706325e-04
+num_outgoing_last_thirty_burst            2.691652e-04
+num_incoming_thirty_burst                 1.688647e-04
+num_incoming_last_thirty_burst            1.519521e-04
+std_outgoing_cum                          1.126997e-04
+sum_incoming_outgoing_total_cum_diff      8.651457e-05
+num_outgoing_cum                          6.618633e-05
+num_outgoing_thirty_cum                   3.305816e-06
+num_incoming_thirty_cum                   2.734075e-06
+num_incoming_last_thirty_cum              2.055773e-06
+num_outgoing_last_thirty_cum              8.011071e-07
+avg_outgoing                              0.000000e+00
+min_interval                              0.000000e+00
+avg_incoming                              0.000000e+00
+================================================================================
+  Threshold: 0.01
+  Selected Features (39): ['sum_incoming_outgoing_total', 'num_incoming_thirty', 'num_outgoing_thirty', 'num_outgoing', 'std_total', 'std_total_cum', 'avg_total_cum', 'fraction_incoming_burst_incoming_diff', 'num_total_cum', 'num_incoming_cum', 'avg_total', 'avg_cum_incoming', 'sum_incoming_outgoing_total_cum', 'num_total', 'fraction_outgoing', 'std_incoming_cum', 'avg_total_burst', 'fraction_outgoing_burst_outgoing_diff', 'avg_burst_outgoing', 'sum_incoming_outgoing_total_burst', 'fraction_incoming', 'num_incoming', 'sum_incoming_outgoing_total_burst_diff', 'max_timestamps', 'avg_burst_incoming', 'num_outgoing_burst', 'num_total_burst', 'std_dev_interval', 'std_outgoing_burst', 'range_interval', 'max_interval', 'mean_interval', 'num_incoming_burst', 'num_incoming_last_thirty', 'std_total_burst', 'num_outgoing_last_thirty', 'fraction_incoming_burst', 'fraction_outgoing_burst', 'std_timestamps']
+  Accuracy: 0.8132
+--------------------------------------------------
+  Threshold: 0.02
+  Selected Features (32): ['sum_incoming_outgoing_total', 'num_incoming_thirty', 'num_outgoing_thirty', 'num_outgoing', 'std_total', 'std_total_cum', 'avg_total_cum', 'fraction_incoming_burst_incoming_diff', 'num_total_cum', 'num_incoming_cum', 'avg_total', 'avg_cum_incoming', 'sum_incoming_outgoing_total_cum', 'num_total', 'fraction_outgoing', 'std_incoming_cum', 'avg_total_burst', 'fraction_outgoing_burst_outgoing_diff', 'avg_burst_outgoing', 'sum_incoming_outgoing_total_burst', 'fraction_incoming', 'num_incoming', 'sum_incoming_outgoing_total_burst_diff', 'max_timestamps', 'avg_burst_incoming', 'num_outgoing_burst', 'num_total_burst', 'std_dev_interval', 'std_outgoing_burst', 'range_interval', 'max_interval', 'mean_interval']
+  Accuracy: 0.7829
+--------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=gini
+Feature Importance:
+std_outgoing_burst                        0.062557
+num_outgoing                              0.060462
+std_dev_interval                          0.040340
+avg_burst_outgoing                        0.039411
+max_timestamps                            0.038329
+std_timestamps                            0.036066
+avg_total_burst                           0.031657
+avg_burst_incoming                        0.030646
+std_incoming_cum                          0.030453
+std_total_cum                             0.029182
+range_interval                            0.028815
+mean_interval                             0.027886
+num_incoming_last_thirty                  0.027475
+max_interval                              0.027436
+num_outgoing_thirty                       0.027211
+num_outgoing_last_thirty                  0.026838
+num_incoming_thirty                       0.026450
+std_total_burst                           0.025573
+avg_total_cum                             0.025160
+avg_cum_incoming                          0.024644
+num_incoming                              0.020520
+sum_incoming_outgoing_total_burst_diff    0.020009
+avg_timestamps                            0.019902
+fraction_outgoing_burst_outgoing_diff     0.019710
+std_incoming_burst                        0.018623
+fraction_outgoing_burst                   0.017517
+fraction_incoming_burst                   0.017059
+fraction_incoming_burst_incoming_diff     0.016473
+fraction_incoming                         0.016344
+num_total_burst                           0.015945
+sum_incoming_outgoing_total_burst         0.014943
+avg_total                                 0.014922
+fraction_outgoing                         0.014627
+std_total                                 0.013841
+num_outgoing_burst                        0.013502
+sum_incoming_outgoing_total_cum           0.013422
+num_incoming_cum                          0.012996
+num_total                                 0.012954
+num_total_cum                             0.012543
+num_incoming_burst                        0.012487
+sum_incoming_outgoing_total               0.012365
+sum_incoming_outgoing_total_cum_diff      0.000695
+std_outgoing_cum                          0.000598
+num_outgoing_cum                          0.000548
+num_outgoing_thirty_burst                 0.000252
+num_outgoing_last_thirty_burst            0.000235
+num_incoming_last_thirty_burst            0.000158
+num_incoming_thirty_burst                 0.000154
+num_outgoing_thirty_cum                   0.000030
+num_outgoing_last_thirty_cum              0.000017
+num_incoming_thirty_cum                   0.000014
+num_incoming_last_thirty_cum              0.000008
+min_interval                              0.000000
+avg_outgoing                              0.000000
+avg_incoming                              0.000000
+================================================================================
+  Threshold: 0.01
+  Selected Features (41): ['std_outgoing_burst', 'num_outgoing', 'std_dev_interval', 'avg_burst_outgoing', 'max_timestamps', 'std_timestamps', 'avg_total_burst', 'avg_burst_incoming', 'std_incoming_cum', 'std_total_cum', 'range_interval', 'mean_interval', 'num_incoming_last_thirty', 'max_interval', 'num_outgoing_thirty', 'num_outgoing_last_thirty', 'num_incoming_thirty', 'std_total_burst', 'avg_total_cum', 'avg_cum_incoming', 'num_incoming', 'sum_incoming_outgoing_total_burst_diff', 'avg_timestamps', 'fraction_outgoing_burst_outgoing_diff', 'std_incoming_burst', 'fraction_outgoing_burst', 'fraction_incoming_burst', 'fraction_incoming_burst_incoming_diff', 'fraction_incoming', 'num_total_burst', 'sum_incoming_outgoing_total_burst', 'avg_total', 'fraction_outgoing', 'std_total', 'num_outgoing_burst', 'sum_incoming_outgoing_total_cum', 'num_incoming_cum', 'num_total', 'num_total_cum', 'num_incoming_burst', 'sum_incoming_outgoing_total']
+  Accuracy: 0.7847
+--------------------------------------------------
+  Threshold: 0.02
+  Selected Features (22): ['std_outgoing_burst', 'num_outgoing', 'std_dev_interval', 'avg_burst_outgoing', 'max_timestamps', 'std_timestamps', 'avg_total_burst', 'avg_burst_incoming', 'std_incoming_cum', 'std_total_cum', 'range_interval', 'mean_interval', 'num_incoming_last_thirty', 'max_interval', 'num_outgoing_thirty', 'num_outgoing_last_thirty', 'num_incoming_thirty', 'std_total_burst', 'avg_total_cum', 'avg_cum_incoming', 'num_incoming', 'sum_incoming_outgoing_total_burst_diff']
+  Accuracy: 0.7750
+--------------------------------------------------
+Parameters: n_estimators=50, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features=None, bootstrap=True, criterion=entropy
+Feature Importance:
+num_outgoing                              9.926319e-02
+num_outgoing_thirty                       5.035064e-02
+num_incoming_thirty                       5.006077e-02
+avg_burst_incoming                        4.936243e-02
+std_outgoing_burst                        4.461589e-02
+max_timestamps                            4.403366e-02
+avg_burst_outgoing                        3.855733e-02
+avg_total_burst                           3.819097e-02
+num_incoming_cum                          3.517450e-02
+std_total_cum                             3.404246e-02
+std_dev_interval                          3.244667e-02
+std_incoming_cum                          3.112009e-02
+fraction_outgoing_burst_outgoing_diff     2.624082e-02
+fraction_incoming_burst_incoming_diff     2.600670e-02
+num_incoming_last_thirty                  2.145890e-02
+num_outgoing_last_thirty                  2.137295e-02
+sum_incoming_outgoing_total_burst         2.099931e-02
+std_timestamps                            1.998623e-02
+mean_interval                             1.926057e-02
+fraction_incoming                         1.902692e-02
+range_interval                            1.860199e-02
+max_interval                              1.827070e-02
+sum_incoming_outgoing_total_burst_diff    1.789540e-02
+num_total_burst                           1.786341e-02
+avg_cum_incoming                          1.762500e-02
+avg_total_cum                             1.662615e-02
+std_total                                 1.543214e-02
+num_incoming                              1.529284e-02
+num_incoming_burst                        1.313491e-02
+avg_total                                 1.247162e-02
+fraction_outgoing                         1.184635e-02
+num_outgoing_burst                        1.175863e-02
+std_total_burst                           1.139207e-02
+sum_incoming_outgoing_total_cum           1.120107e-02
+sum_incoming_outgoing_total               1.023626e-02
+num_total                                 1.018414e-02
+num_total_cum                             1.010501e-02
+avg_timestamps                            9.968805e-03
+fraction_outgoing_burst                   9.893212e-03
+fraction_incoming_burst                   9.332168e-03
+std_incoming_burst                        8.822677e-03
+num_incoming_thirty_burst                 9.146634e-05
+num_incoming_last_thirty_burst            8.075329e-05
+num_outgoing_last_thirty_burst            7.341971e-05
+num_outgoing_thirty_burst                 7.130223e-05
+sum_incoming_outgoing_total_cum_diff      6.182700e-05
+std_outgoing_cum                          4.860855e-05
+num_outgoing_cum                          4.290854e-05
+num_incoming_last_thirty_cum              1.925933e-06
+num_incoming_thirty_cum                   1.423560e-06
+num_outgoing_last_thirty_cum              8.015872e-07
+min_interval                              0.000000e+00
+avg_outgoing                              0.000000e+00
+num_outgoing_thirty_cum                   0.000000e+00
+avg_incoming                              0.000000e+00
+================================================================================

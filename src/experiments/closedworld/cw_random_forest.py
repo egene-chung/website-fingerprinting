@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score, classification_report
 
 # 데이터 로드
-cw_path = '../data/csv/closedworld_data.csv'
+cw_path = '../../data/csv/closedworld_data.csv'
 df = pd.read_csv(cw_path)
 
 # Feature와 Label 정의
@@ -44,7 +44,7 @@ param_combinations = list(product(
 ))
 
 # 결과 기록 파일 초기화
-results_log = "rf_results.txt"
+results_log = "cw_random_forest.txt"
 with open(results_log, "w") as log:
     log.write("Detailed Feature Importance and Threshold Performance\n")
     log.write("=" * 80 + "\n")
