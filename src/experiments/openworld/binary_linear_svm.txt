@@ -1,0 +1,66 @@
+Linear SVM Results with Stratified K-Fold
+==================================================
+
+=== Results for k=all ===
+Best Parameters: {'C': 100}
+Best CV Accuracy: 0.8935
+Test Accuracy: 0.8622
+Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+          -1     0.9862    0.6090    0.7530      2000
+           1     0.8287    0.9955    0.9045      3800
+
+    accuracy                         0.8622      5800
+   macro avg     0.9075    0.8023    0.8287      5800
+weighted avg     0.8830    0.8622    0.8523      5800
+
+==================================================
+
+=== Results for k=45 ===
+Best Parameters: {'C': 100}
+Best CV Accuracy: 0.8573
+Test Accuracy: 0.8717
+Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+          -1     0.8811    0.7260    0.7961      2000
+           1     0.8680    0.9484    0.9064      3800
+
+    accuracy                         0.8717      5800
+   macro avg     0.8745    0.8372    0.8512      5800
+weighted avg     0.8725    0.8717    0.8684      5800
+
+==================================================
+
+=== Results for k=40 ===
+Best Parameters: {'C': 100}
+Best CV Accuracy: 0.8564
+Test Accuracy: 0.8700
+Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+          -1     0.8908    0.7100    0.7902      2000
+           1     0.8621    0.9542    0.9058      3800
+
+    accuracy                         0.8700      5800
+   macro avg     0.8765    0.8321    0.8480      5800
+weighted avg     0.8720    0.8700    0.8660      5800
+
+==================================================
+
+=== Results for k=35 ===
+Best Parameters: {'C': 100}
+Best CV Accuracy: 0.8425
+Test Accuracy: 0.8702
+Classification Report on Test Set:
+              precision    recall  f1-score   support
+
+          -1     0.9581    0.6520    0.7760      2000
+           1     0.8432    0.9850    0.9086      3800
+
+    accuracy                         0.8702      5800
+   macro avg     0.9007    0.8185    0.8423      5800
+weighted avg     0.8828    0.8702    0.8629      5800
+
+==================================================
