@@ -25,9 +25,9 @@ def evaluate_multi(y_true, y_pred):
     print(f"Weighted F1-Score: {weighted_f1:.4f}")
 
     # Classification Report
-    report = classification_report(y_true, y_pred, zero_division=0)  # Avoid errors due to division by zero
-    print("\nClassification Report:")
-    print(report)
+    # report = classification_report(y_true, y_pred, zero_division=0)  # Avoid errors due to division by zero
+    # print("\nClassification Report:")
+    # print(report)
     
 def evaluate_binary(y_true, y_pred, y_prob=None):
     # evaluate binary classification in openworld scenario => Monitored(1)+Unmonitored(-1)
@@ -43,9 +43,9 @@ def evaluate_binary(y_true, y_pred, y_prob=None):
     print(f"F1-Score: {f1:.4f}")
 
     # Classification Report
-    report = classification_report(y_true, y_pred, zero_division=0)  # Avoid errors due to division by zero
-    print("\nClassification Report:")
-    print(report)
+    # report = classification_report(y_true, y_pred, zero_division=0)  # Avoid errors due to division by zero
+    # # print("\nClassification Report:")
+    # # print(report)
     
     if y_prob is not None:
         auc_roc = roc_auc_score(y_true, y_prob[:, 1])
