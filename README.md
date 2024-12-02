@@ -3,13 +3,13 @@
 <p align="center">
   <a href="#setup">Setup</a> •
   <a href="#folder-structure">Folder Structure</a> •
-  <!-- <a href="#problem-statement">Problem Statement</a> • -->
   <a href="#experiments">Experiments</a> •
+  <a href="#results">Results</a> •
   <!-- <a href="#performance">Performance</a> •
   <a href="#insights">Insights</a> -->
 </p>
 
-## <a id="setup">1. Set Up</a>
+## <a id="setup">Set Up</a>
 
 ### ☑️ Check if Conda is Installed
 
@@ -122,7 +122,7 @@ $ python main.py
 
 - Select features to improve model performance:
   - Navigate to the `feature_selection/` folder.
-  - Run all Python scripts in the folder.
+  - Run all Python scripts in the folder. (The files with ✅ marks give best results)
   - Final results will be saved as `.txt` files in the same directory.
   - Use the parameters corresponding to the highest accuracy.
 
@@ -147,9 +147,19 @@ $ python sampling.py
 
 ```
 
+## <a id="results">Results</a>
+
 ### Hyperparameter tuned model with, without Feature Selection
 
 <img width="803" alt="image" src="https://github.com/user-attachments/assets/ba61fc51-3fcf-4f3d-b40e-99514881440d">
+
+[Open World Binary Precision Recall Curve]
+
+![image](https://github.com/user-attachments/assets/a8052bbf-6f6b-495c-8bf4-7b8b98c46b57)
+
+[Open World Binary ROC Curve]
+
+![image](https://github.com/user-attachments/assets/ee352115-ce8c-4d4a-b5a2-806ccaeb1cb9)
 
 ### Sampling applied without Feature Selection
 
