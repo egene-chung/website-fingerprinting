@@ -9,7 +9,7 @@
   <a href="#insights">Insights</a>
 </p>
 
-## <a id="setup">Set Up</a>
+## <a id="setup">1. Set Up</a>
 
 ### ☑️ Check if Conda is Installed
 
@@ -33,7 +33,7 @@ Before proceeding, verify whether **Conda** is already installed on your system.
 
 ### ☑️ Clone this Repository
 
-To clone an existing repository: https://egene-chung.notion.site/Github-Repo-Clone-1204762b20cc800eb7ebfc06f639e3c1?pvs=4 (Follow Steps 1-3)
+To clone an existing repository: [FOLLOW STEPS 1-3](https://egene-chung.notion.site/Github-Repo-Clone-1204762b20cc800eb7ebfc06f639e3c1?pvs=4)
 
 ```bash
 # Clone this repository
@@ -101,7 +101,7 @@ $ python main.py
 └── 📄 .requirements.txt
 ```
 
-## <a id="problem-statement">3. Problem Statement</a>
+<!-- ## <a id="problem-statement">3. Problem Statement</a>
 
 ## <a id="experimental-settings">4. Experimental Settings</a>
 
@@ -113,6 +113,6 @@ $ python main.py
 
 ## <a id="performance">8. Performance</a>
 
-## <a id="insights">9. Insights</a>
+## <a id="insights">9. Insights</a> -->
 
 > If you encounter any issues starting the code, please contact (egenechung@gmail.com).
