@@ -60,7 +60,7 @@ $ python main.py
 - Upload mon_standard.pkl and unmon_standard10.pkl from the provided dataset into the data/pkl folder.
 - Then, simply execute main.py! The script will automatically verify the existence of the required files and proceed accordingly.
 
-## <a id="folder-structure">2. Folder Structure</a>
+## <a id="folder-structure">Folder Structure</a>
 
 ```text
 
@@ -94,12 +94,66 @@ $ python main.py
 │   │   └── 📉 ow_multi_random_forest_results.csv
 │   │
 │   ├── 📁 main_results/
+│   │   ├── 📄 ow_binary_precision_recall_curve.png
+│   │   ├── 📉 ow_binary_roc_curve.png
+│   │   ├── 📄 results.log
+│   │   └── 📉 sampling_results.log
+│   │
 │   ├── 📄 main.py
+│   ├── 📄 sampling.py
 │   └── 📄 evaluate.py
+│
 ├── 📄 .gitignore
 ├── 📄 README.md
 └── 📄 .requirements.txt
 ```
+
+## <a id="experiments">Experimental Settings and Process Overview</a>
+
+### 1. Iterative Hyperparameter Tuning with Stratified K-Fold
+
+- Conduct hyperparameter tuning to maximize accuracy across folds:
+  - Navigate to the `main_experiments/` folder.
+  - Run all Python scripts in the folder.
+  - Final results will be saved as `.txt` files in the same directory.
+  - Identify the best parameters with the highest mean fold accuracy.
+
+### 2. Feature Selection Using Forward Selection and Backward Elimination
+
+- Select features to improve model performance:
+  - Navigate to the `feature_selection/` folder.
+  - Run all Python scripts in the folder.
+  - Final results will be saved as `.txt` files in the same directory.
+  - Use the parameters corresponding to the highest accuracy.
+
+### 3. Applying Sampling Techniques in an Open-World Scenario
+
+- Evaluate sampling methods to handle data imbalance:
+  - Run the script `sampling.py` to apply sampling techniques.
+  - Results previously saved can be found in `/main_results/sampling_results.log`
+
+---
+
+### Example Command Usage
+
+```bash
+# Run the model with best parameters and compare pre- and post-feature selection results.
+# Previous results are stored in /main_results/results.log
+$ python main.py
+
+# Apply sampling techniques without feature selection
+# Previous results are stored in /main_results/sampling_results.log
+$ python sampling.py
+
+```
+
+### Hyperparameter tuned model with, without Feature Selection
+
+<img width="803" alt="image" src="https://github.com/user-attachments/assets/ba61fc51-3fcf-4f3d-b40e-99514881440d">
+
+### Sampling applied without Feature Selection
+
+<img width="805" alt="image" src="https://github.com/user-attachments/assets/defc9cd8-a9bc-45c6-8d38-47949c35b7d6">
 
 <!-- ## <a id="problem-statement">3. Problem Statement</a>
 
