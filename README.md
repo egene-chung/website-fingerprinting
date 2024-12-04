@@ -12,6 +12,23 @@
 
 ## <a id="problem-statement">Problem Statement</a>
 
+Tor is an anonymous communication system that ensures user anonymity by constructing a communication path with three randomly chosen proxies, known as nodes (Guard, Middle, Exit). However, Tor is susceptible to **website fingerprinting attacks**, wherein attackers analyze traffic patterns between users and the Tor network's entry nodes to deduce the specific websites being visited.
+
+### Objective
+
+The project aims to classify traffic patterns in the attacker’s perspective, breaking the anonymity of Tor network users.
+
+### Scenarios
+
+1. Closed-World Scenario:
+   
+- **Multi-Classification**: The attacker trains a fingerprinting model on a specific, predefined set of monitored websites, assuming that users visit only these websites.
+
+2. Open-World Scenario:
+  
+- **Binary Classification**: Determine whether a visited website belongs to a monitored dataset or not.
+- **Multi-Classification**: Distinguish between multiple monitored and unmonitored website classes.
+
 
 
 ## <a id="setup">Set Up</a>
