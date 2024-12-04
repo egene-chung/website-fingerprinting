@@ -1,6 +1,8 @@
 # Website Fingerprinting
 
 <p align="center">
+  <a href="#problem-statement">Problem Statement</a> •
+  <a href="#dataset-overview">Dataset Overview</a> •
   <a href="#setup">Setup</a> •
   <a href="#folder-structure">Folder Structure</a> •
   <a href="#experiments">Experiments</a> •
@@ -8,6 +10,55 @@
   <!-- <a href="#performance">Performance</a> •
   <a href="#insights">Insights</a> -->
 </p>
+
+## <a id="problem-statement">Problem Statement</a>
+
+Tor is an anonymous communication system that ensures user anonymity by constructing a communication path with three randomly chosen proxies, known as nodes (Guard, Middle, Exit). However, Tor is susceptible to **website fingerprinting attacks**, wherein attackers analyze traffic patterns between users and the Tor network's entry nodes to deduce the specific websites being visited.
+
+### Objective
+
+The project aims to classify traffic patterns in the attacker’s perspective, breaking the anonymity of Tor network users.
+
+### Scenarios
+
+1. **Closed-World Scenario**:
+   
+- **Multi-Classification**: The attacker trains a fingerprinting model on a specific, predefined set of monitored websites, assuming that users visit only these websites.
+
+2. **Open-World Scenario**:
+  
+- **Binary Classification**: Determine whether a visited website belongs to a monitored dataset or not.
+- **Multi-Classification**: Distinguish between multiple monitored and unmonitored website classes.
+
+## <a id="dataset-overview">Dataset Overview</a>
+
+### 1. **Dataset Summary**
+
+- **Monitored Dataset**:
+  - File: `mon_standard.pkl` (~683MB)
+  - Includes traffic data from **95 websites**.
+  - Each website contains **10 non-index subpages**, observed **20 times**, resulting in **200 records per website**.
+  - Total instances: **19,000**.
+  - Data is class-balanced, avoiding the need for sampling techniques in the closed-world scenario.
+- **nmonitored Dataset**:
+  - File: `unmon_standard10.pkl` (~408MB)
+  - Contains **10,000 instances** for the open-world scenario.
+
+### 2. **Preprocessed Dataset**
+
+To simplify and optimize experiments, preprocessed datasets were generated and uploaded to GitHub. These datasets are used for specific classification scenarios:
+
+- **Closed-World Scenario**: `closedworld_data.csv` (~10MB)
+- **Open-World Binary Classification**: `openworld_binary_data.csv` (~15MB)
+- **Open-World Multi-Classification**: `openworld_multi_data.csv` (~15MB)
+
+### 3. **Data Preprocessing**
+
+- The raw dataset was converted into preprocessed CSV files tailored to the project's needs.
+- Preprocessing involved:
+  - Feature extraction and selection for each scenario.
+  - Data scaling using StandardScaler.
+- **Preprocessing code** is available at `/src/data/preprocess.py` in the GitHub repository.
 
 ## <a id="setup">Set Up</a>
 
@@ -152,6 +203,31 @@ $ python sampling.py
 ### Hyperparameter tuned model with, without Feature Selection
 
 <img width="803" alt="image" src="https://github.com/user-attachments/assets/ba61fc51-3fcf-4f3d-b40e-99514881440d">
+
+
+- Conducted experiments using a Random Forest model across three scenarios:
+  - Closed World
+  - Open World Binary
+  - Open World Multi
+
+- Results
+  - After applying feature selection, we identified the results with the highest performance for each scenario:
+  - Open World Binary: Achieved the highest accuracy at 0.9243
+  - Open World Multi: Followed with an accuracy of 0.8388
+  - Closed World: Recorded an accuracy of 0.8261
+
+- Key Observations
+  - Feature selection improved the model's performance across all scenarios. 
+  - In the Open World Binary setting:
+  - Despite data imbalance, the model achieved high precision and recall without applying sampling techniques
+
+- Key Metrics
+  -  Monitored Dataset: 200 instances per label (0-94)
+  -  Unmonitored Dataset: 10,000 instances
+    
+- Why Weighted Metrics?
+  -  The dataset is highly imbalanced, especially in Open-World Multi-Classification scenarios
+  -  Weighted metrics better represent model performance by accounting for class imbalance
 
 [Open World Binary Precision Recall Curve]
 
