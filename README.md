@@ -1,6 +1,7 @@
 # Website Fingerprinting
 
 <p align="center">
+  <a href="#problem-statement">Problem Statement</a> •
   <a href="#setup">Setup</a> •
   <a href="#folder-structure">Folder Structure</a> •
   <a href="#experiments">Experiments</a> •
@@ -8,6 +9,10 @@
   <!-- <a href="#performance">Performance</a> •
   <a href="#insights">Insights</a> -->
 </p>
+
+## <a id="problem-statement">Problem Statement</a>
+
+
 
 ## <a id="setup">Set Up</a>
 
