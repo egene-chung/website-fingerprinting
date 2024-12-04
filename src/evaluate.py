@@ -17,9 +17,9 @@ def evaluate_multi(y_true, y_pred):
     weighted_f1 = f1_score(y_true, y_pred, average='weighted')
     
     print(f"Accuracy: {accuracy:.4f}")
-    print(f"Macro Precision: {macro_precision:.4f}")
-    print(f"Macro Recall: {macro_recall:.4f}")
-    print(f"Macro F1-Score: {macro_f1:.4f}")
+    # print(f"Macro Precision: {macro_precision:.4f}")
+    # print(f"Macro Recall: {macro_recall:.4f}")
+    # print(f"Macro F1-Score: {macro_f1:.4f}")
     print(f"Weighted Precision: {weighted_precision:.4f}")
     print(f"Weighted Recall: {weighted_recall:.4f}")
     print(f"Weighted F1-Score: {weighted_f1:.4f}")
@@ -60,7 +60,7 @@ def evaluate_binary(y_true, y_pred, y_prob=None):
         plt.title("Precision-Recall Curve")
         plt.legend(loc="best")
         plt.grid()
-        plt.savefig(f"main_results/ow_binary_precision_recall_curve.png")
+        plt.savefig(f"main_results/openworld_binary_precision_recall_curve.png")
         plt.close()
 
         # ROC Curve
@@ -72,5 +72,5 @@ def evaluate_binary(y_true, y_pred, y_prob=None):
         plt.title("ROC Curve")
         plt.legend(loc="best")
         plt.grid()
-        plt.savefig(f"main_results/ow_binary_roc_curve.png")
+        plt.savefig(f"main_results/openworld_binary_roc_curve.png")
         plt.close()

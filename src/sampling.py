@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 from data.preprocess import check_and_preprocess_data
 from evaluate import evaluate_multi, evaluate_binary
 
-def train_randomforest(
+def train_randomforest_with_sampling(
     file_path, 
     scenario, 
     n_estimators=100, 
@@ -26,19 +26,20 @@ def train_randomforest(
     
     # Check class distribution
     class_counts = y.value_counts()
-    print(f"\nClass Distribution Before Sampling: \n{class_counts}")
+    print("[After Sampling]")
+    # print(f"\nClass Distribution Before Sampling: \n{class_counts}")
     # Adjusted balance threshold
     imbalance_threshold = 0.8  # Defines the minimum acceptable ratio for balance
 
     if class_counts.min() / class_counts.max() < imbalance_threshold:  # Detect imbalance
         if class_counts.idxmin() == class_counts.index[-1]:  # If imbalance is caused by minority class
-            print("\nApplying Oversampling (SMOTE)...")
+            # print("\nApplying Oversampling (SMOTE)...")
             sampler = SMOTE(sampling_strategy=sampling_strategy, random_state=42)
         else:
-            print("\nApplying Undersampling (RandomUnderSampler)...")
+            # print("\nApplying Undersampling (RandomUnderSampler)...")
             sampler = RandomUnderSampler(sampling_strategy=sampling_strategy, random_state=42)
     else:
-        print("\nClass distribution is close to balanced. No sampling applied.")
+        # print("\nClass distribution is close to balanced. No sampling applied.")
         sampler = None
 
     # data scaling
@@ -51,7 +52,7 @@ def train_randomforest(
     # Apply sampling if needed
     if sampler:
         X_train, y_train = sampler.fit_resample(X_train, y_train)
-        print(f"\nClass Distribution After Sampling: \n{y_train.value_counts()}")
+        # print(f"\nClass Distribution After Sampling: \n{y_train.value_counts()}")
 
     # random forest model
     model = RandomForestClassifier(
@@ -64,9 +65,7 @@ def train_randomforest(
     )
     
     # train model before feature selection
-    print(f"\n====== {scenario} ======")
-    if selected_features:
-        print("[Before Feature Selection]")
+    print("[After Sampling]")
 
     model.fit(X_train, y_train)
     y_pred_all = model.predict(X_test)
@@ -95,20 +94,3 @@ def train_randomforest(
             evaluate_binary(y_test, y_pred_selected, y_proba)
         else:
             evaluate_multi(y_test, y_pred_selected)
-
-def main():
-    # file paths
-    cw_path = 'data/csv/closedworld_data.csv'
-    ow_binary_path = 'data/csv/openworld_binary_data.csv'
-    ow_multi_path = 'data/csv/openworld_multi_data.csv'
-
-    # check data/csv/ and check if these files exist
-    check_and_preprocess_data(cw_path, ow_binary_path, ow_multi_path)
-    
-    # Best performing model + hyperparameters in scenarios
-    train_randomforest(cw_path, scenario="Closed World", n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=1, max_features="sqrt", )
-    train_randomforest(ow_binary_path, scenario="Open World Binary", n_estimators=100, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features="log2")
-    train_randomforest(ow_multi_path, scenario="Open World Multi", n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=1, max_features="log2")
-
-if __name__ == "__main__":
-    main()

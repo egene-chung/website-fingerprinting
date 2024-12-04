@@ -5,6 +5,7 @@ from sklearn.preprocessing import StandardScaler
 
 from data.preprocess import check_and_preprocess_data
 from evaluate import evaluate_multi, evaluate_binary
+from sampling import train_randomforest_with_sampling
 
 def train_randomforest(
     file_path, 
@@ -89,9 +90,16 @@ def main():
     ow_multi_feature_selection = ['num_outgoing_last_thirty_cum', 'num_incoming_last_thirty_burst', 'num_incoming_thirty_burst', 'num_outgoing_last_thirty_burst', 'num_outgoing_thirty_burst', 'std_outgoing_cum', 'num_outgoing_thirty_cum', 'num_outgoing_cum', 'std_incoming_burst', 'avg_timestamps', 'fraction_incoming_burst', 'fraction_outgoing_burst', 'num_incoming_burst', 'num_outgoing_burst', 'std_total_burst', 'num_total_burst', 'sum_incoming_outgoing_total_burst', 'num_incoming_last_thirty', 'num_outgoing_last_thirty', 'fraction_outgoing', 'sum_incoming_outgoing_total_burst_diff', 'std_timestamps', 'std_total', 'sum_incoming_outgoing_total_cum', 'num_total_cum', 'fraction_incoming', 'num_total', 'num_incoming', 'num_incoming_cum', 'fraction_incoming_burst_incoming_diff', 'avg_total', 'fraction_outgoing_burst_outgoing_diff', 'sum_incoming_outgoing_total', 'mean_interval', 'avg_burst_incoming', 'avg_total_burst', 'avg_total_cum', 'avg_cum_incoming', 'range_interval', 'num_outgoing', 'max_interval', 'std_total_cum', 'std_dev_interval', 'std_incoming_cum', 'max_timestamps', 'avg_burst_outgoing', 'std_outgoing_burst', 'num_incoming_thirty', 'num_outgoing_thirty', 'sum_incoming_outgoing_total_cum_diff', 'num_incoming_thirty_cum']
     
     # best performing model + hyperparameters in scenarios (experiments in /main_experiments)
+    # closed world
     train_randomforest(cw_path, scenario="Closed World", n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=1, max_features="sqrt", selected_features=cw_feature_selection)
+    
+    # open world binary (pre-fs, post-fs, sampling)
     train_randomforest(ow_binary_path, scenario="Open World Binary", n_estimators=100, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features="log2", selected_features=ow_binary_feature_selection)
+    train_randomforest_with_sampling(ow_binary_path, scenario="Open World Binary", n_estimators=100, max_depth=None, min_samples_split=2, min_samples_leaf=1, max_features="log2")
+    
+    # open world multi (pre-fs, post-fs, sampling)
     train_randomforest(ow_multi_path, scenario="Open World Multi", n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=1, max_features="log2", selected_features=ow_multi_feature_selection)
+    train_randomforest_with_sampling(ow_multi_path, scenario="Open World Multi", n_estimators=200, max_depth=30, min_samples_split=2, min_samples_leaf=1, max_features="log2")
 
 if __name__ == "__main__":
     main()

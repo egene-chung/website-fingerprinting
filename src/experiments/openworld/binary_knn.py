@@ -28,7 +28,7 @@ with open(results_file_path, 'w') as file:
     file.write("=" * 50 + "\n")
 
 # Feature Selection 및 실험
-k_values = [10, 15, 20, 25, 30, 35, 40, 44, 47, 50]  # SelectKBest에서 사용할 k 값
+k_values = [10, 15, 20, 25, 30]  # SelectKBest에서 사용할 k 값
 scaler = StandardScaler()
 minmax_scaler = MinMaxScaler()
 poly = PolynomialFeatures(degree=2, interaction_only=True, include_bias=False)
