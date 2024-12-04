@@ -26,7 +26,7 @@ def train_randomforest_with_sampling(
     
     # Check class distribution
     class_counts = y.value_counts()
-    print("[After Sampling]")
+    print("\n[After Sampling]")
     # print(f"\nClass Distribution Before Sampling: \n{class_counts}")
     # Adjusted balance threshold
     imbalance_threshold = 0.8  # Defines the minimum acceptable ratio for balance
@@ -64,8 +64,6 @@ def train_randomforest_with_sampling(
         random_state=42
     )
     
-    # train model before feature selection
-    print("[After Sampling]")
 
     model.fit(X_train, y_train)
     y_pred_all = model.predict(X_test)
