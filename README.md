@@ -204,6 +204,31 @@ $ python sampling.py
 
 <img width="803" alt="image" src="https://github.com/user-attachments/assets/ba61fc51-3fcf-4f3d-b40e-99514881440d">
 
+
+- Conducted experiments using a Random Forest model across three scenarios:
+  - Closed World
+  - Open World Binary
+  - Open World Multi
+
+- Results
+  - After applying feature selection, we identified the results with the highest performance for each scenario:
+  - Open World Binary: Achieved the highest accuracy at 0.9243
+  - Open World Multi: Followed with an accuracy of 0.8388
+  - Closed World: Recorded an accuracy of 0.8261
+
+- Key Observations
+  - Feature selection improved the model's performance across all scenarios. 
+  - In the Open World Binary setting:
+  - Despite data imbalance, the model achieved high precision and recall without applying sampling techniques
+
+- Key Metrics
+  -  Monitored Dataset: 200 instances per label (0-94)
+  -  Unmonitored Dataset: 10,000 instances
+    
+- Why Weighted Metrics?
+  -  The dataset is highly imbalanced, especially in Open-World Multi-Classification scenarios
+  -  Weighted metrics better represent model performance by accounting for class imbalance
+
 [Open World Binary Precision Recall Curve]
 
 ![image](https://github.com/user-attachments/assets/a8052bbf-6f6b-495c-8bf4-7b8b98c46b57)
