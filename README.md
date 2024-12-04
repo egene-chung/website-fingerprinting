@@ -2,6 +2,7 @@
 
 <p align="center">
   <a href="#problem-statement">Problem Statement</a> •
+  <a href="#dataset-overview">Dataset Overview</a> •
   <a href="#setup">Setup</a> •
   <a href="#folder-structure">Folder Structure</a> •
   <a href="#experiments">Experiments</a> •
@@ -20,16 +21,44 @@ The project aims to classify traffic patterns in the attacker’s perspective, b
 
 ### Scenarios
 
-1. Closed-World Scenario:
+1. **Closed-World Scenario**:
    
 - **Multi-Classification**: The attacker trains a fingerprinting model on a specific, predefined set of monitored websites, assuming that users visit only these websites.
 
-2. Open-World Scenario:
+2. **Open-World Scenario**:
   
 - **Binary Classification**: Determine whether a visited website belongs to a monitored dataset or not.
 - **Multi-Classification**: Distinguish between multiple monitored and unmonitored website classes.
 
+## <a id="dataset-overview">Dataset Overview</a>
 
+### 1. **Dataset Summary**
+
+- **Monitored Dataset**:
+  - File: `mon_standard.pkl` (~683MB)
+  - Includes traffic data from **95 websites**.
+  - Each website contains **10 non-index subpages**, observed **20 times**, resulting in **200 records per website**.
+  - Total instances: **19,000**.
+  - Data is class-balanced, avoiding the need for sampling techniques in the closed-world scenario.
+- **nmonitored Dataset**:
+  - File: `unmon_standard10.pkl` (~408MB)
+  - Contains **10,000 instances** for the open-world scenario.
+
+### 2. **Preprocessed Dataset**
+
+To simplify and optimize experiments, preprocessed datasets were generated and uploaded to GitHub. These datasets are used for specific classification scenarios:
+
+- **Closed-World Scenario**: `closedworld_data.csv` (~10MB)
+- **Open-World Binary Classification**: `openworld_binary_data.csv` (~15MB)
+- **Open-World Multi-Classification**: `openworld_multi_data.csv` (~15MB)
+
+### 3. **Data Preprocessing**
+
+- The raw dataset was converted into preprocessed CSV files tailored to the project's needs.
+- Preprocessing involved:
+  - Feature extraction and selection for each scenario.
+  - Data scaling using StandardScaler.
+- **Preprocessing code** is available at `/src/data/preprocess.py` in the GitHub repository.
 
 ## <a id="setup">Set Up</a>
 
